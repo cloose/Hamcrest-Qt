@@ -9,6 +9,9 @@ class BaseDescriptionTest : public QObject
     
 private slots:
     void bracketsAppendedShortValue();
+    void bracketsAppendedLongValue();
+    void bracketsAppendedFloatValue();
+    void bracketsAppendedDoubleValue();
 };
 
 #endif // BASEDESCRIPTIONTEST_H

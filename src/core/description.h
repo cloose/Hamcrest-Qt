@@ -35,6 +35,9 @@ public:
     Description &appendValue(const T &value);
 
     Description &appendValue(short value);
+    Description &appendValue(long value);
+    Description &appendValue(float value);
+    Description &appendValue(double value);
 
     /**
      * Converts the description into a {@link QString} value.
