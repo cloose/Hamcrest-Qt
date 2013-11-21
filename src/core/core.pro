@@ -13,13 +13,16 @@ CONFIG += exceptions
 
 SOURCES += \
     basedescription.cpp \
-    description.cpp
+    description.cpp \
+    stringdescription.cpp
 
 HEADERS += \
     basedescription.h \
+    basematcher.h \
     description.h \
     matcher.h \
-    selfdescribing.h
+    selfdescribing.h \
+    stringdescription.h
 
 unix:!symbian {
     maemo5 {

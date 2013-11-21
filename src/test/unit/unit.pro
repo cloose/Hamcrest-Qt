@@ -7,17 +7,19 @@ QT       += testlib
 QT       -= gui
 
 TARGET = unittest
-CONFIG   += console exceptions
+CONFIG   += console exceptions testcase
 CONFIG   -= app_bundle
 
 TEMPLATE = app
 
 SOURCES += \
     main.cpp \
-    basedescriptiontest.cpp
+    basedescriptiontest.cpp \
+    basematchertest.cpp
 
 HEADERS += \
-    basedescriptiontest.h
+    basedescriptiontest.h \
+    basematchertest.h
 
 ##################################################
 # Dependencies
