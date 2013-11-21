@@ -11,9 +11,12 @@ TEMPLATE = lib
 
 CONFIG += exceptions
 
-SOURCES += 
+SOURCES += \
+    basedescription.cpp \
+    description.cpp
 
 HEADERS += \
+    basedescription.h \
     description.h \
     selfdescribing.h
 

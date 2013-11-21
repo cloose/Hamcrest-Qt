@@ -34,6 +34,8 @@ public:
     template <typename T>
     Description &appendValue(const T &value);
 
+    Description &appendValue(short value);
+
     /**
      * Converts the description into a {@link QString} value.
      */
