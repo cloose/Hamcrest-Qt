@@ -18,6 +18,7 @@ SOURCES += \
 HEADERS += \
     basedescription.h \
     description.h \
+    matcher.h \
     selfdescribing.h
 
 unix:!symbian {
