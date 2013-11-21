@@ -13,7 +13,9 @@ CONFIG += exceptions
 
 SOURCES += 
 
-HEADERS += 
+HEADERS += \
+    description.h \
+    selfdescribing.h
 
 unix:!symbian {
     maemo5 {
