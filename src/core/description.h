@@ -39,6 +39,12 @@ public:
     Description &appendValue(float value);
     Description &appendValue(double value);
 
+    Description &appendValue(const char *value);
+    Description &appendValue(const QString &value);
+
+    Description &appendValue(char value);
+    Description &appendValue(const QChar &value);
+
     /**
      * Converts the description into a {@link QString} value.
      */
@@ -47,6 +53,9 @@ public:
 protected:
     virtual void appendString(const QString &str) = 0;
     virtual void append(const QChar &c) = 0;
+
+    virtual void toCppSyntaxString(const QString &unformatted);
+    virtual void toCppSyntax(const QChar &ch);
 };
 
 

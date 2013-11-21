@@ -8,6 +8,8 @@ class BaseDescriptionTest : public QObject
     Q_OBJECT
     
 private slots:
+    void quotesAppendedStringValue();
+    void quotesAppendedCharacterValue();
     void bracketsAppendedShortValue();
     void bracketsAppendedLongValue();
     void bracketsAppendedFloatValue();

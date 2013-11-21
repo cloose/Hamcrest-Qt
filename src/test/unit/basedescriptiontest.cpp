@@ -20,6 +20,28 @@ protected:
 
 }
 
+void BaseDescriptionTest::quotesAppendedStringValue()
+{
+    QScopedPointer<Description> baseDescription(new BaseDescriptionMock());
+    baseDescription->appendValue("foo\n");
+    QCOMPARE(result, QStringLiteral("\"foo\\n\""));
+
+    QScopedPointer<Description> baseDescription2(new BaseDescriptionMock());
+    baseDescription2->appendValue(QString("foo\n"));
+    QCOMPARE(result, QStringLiteral("\"foo\\n\""));
+}
+
+void BaseDescriptionTest::quotesAppendedCharacterValue()
+{
+    QScopedPointer<Description> baseDescription(new BaseDescriptionMock());
+    baseDescription->appendValue('f');
+    QCOMPARE(result, QStringLiteral("\"f\""));
+
+    QScopedPointer<Description> baseDescription2(new BaseDescriptionMock());
+    baseDescription2->appendValue(QChar('f'));
+    QCOMPARE(result, QStringLiteral("\"f\""));
+}
+
 void BaseDescriptionTest::bracketsAppendedShortValue()
 {
     QScopedPointer<Description> baseDescription(new BaseDescriptionMock());
