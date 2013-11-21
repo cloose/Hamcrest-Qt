@@ -21,6 +21,7 @@ HEADERS += \
     basematcher.h \
     description.h \
     matcher.h \
+    matcherassert.h \
     selfdescribing.h \
     stringdescription.h
 
