@@ -9,6 +9,7 @@ class IsEqualTest : public QObject
     
 private slots:
     void comparesObjectsUsingEqualsMethod();
+    void comparesTheElementsOfAQList();
 };
 
 #endif // ISEQUALTEST_H
