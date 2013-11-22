@@ -29,10 +29,6 @@ public:
 private:
     static bool areEqual(const T &actual, const T &expected)
     {
-        // null reference?
-        if (&actual == 0)
-            return &expected == 0;
-
         return actual == expected;
     }
 

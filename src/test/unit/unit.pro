@@ -23,7 +23,8 @@ HEADERS += \
     basedescriptiontest.h \
     basematchertest.h \
     isequaltest.h \
-    matcherasserttest.h
+    matcherasserttest.h \
+    abstractmatcher.h
 
 ##################################################
 # Dependencies
