@@ -2,6 +2,7 @@
 #define HAMCREST_DESCRIPTION_H
 
 #include <QString>
+#include "tostring_p.h"
 
 namespace Hamcrest {
 
@@ -60,8 +61,11 @@ protected:
 
 
 template <typename T>
-Description &Description::appendValue(const T &)
+Description &Description::appendValue(const T &value)
 {
+    appendString("<");
+    appendString(ToString(value));
+    appendString(">");
     return *this;
 }
 

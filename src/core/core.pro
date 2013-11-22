@@ -25,7 +25,9 @@ HEADERS += \
     matcherassert.h \
     selfdescribing.h \
     stringdescription.h \
+    tostring_p.h \
     matcher/areequal_p.h \
+    matcher/is.h \
     matcher/isequal.h
 
 unix:!symbian {

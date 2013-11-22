@@ -8,9 +8,9 @@
 namespace Hamcrest {
 
 /**
-* Is the value equal to another value, as tested by the
-* operator==() method?
-*/
+ * Is the value equal to another value, as tested by the
+ * operator==() method?
+ */
 template <typename T>
 class IsEqual : public BaseMatcher<T>
 {
