@@ -3,6 +3,7 @@
 
 #include "basematcher.h"
 #include "description.h"
+#include "areequal_p.h"
 
 namespace Hamcrest {
 
@@ -18,18 +19,12 @@ public:
 
     virtual bool matches(const T &actualValue) const
     {
-        return areEqual(actualValue, expectedValue);
+        return AreEqual(actualValue, expectedValue);
     }
 
     virtual void describeTo(Description &description) const
     {
         description.appendValue(expectedValue);
-    }
-
-private:
-    static bool areEqual(const T &actual, const T &expected)
-    {
-        return actual == expected;
     }
 
 private:
@@ -40,6 +35,12 @@ template <typename T>
 QSharedPointer<Matcher<T> > equalTo(const T &operand)
 {
     return QSharedPointer<Matcher<T> >(new IsEqual<T>(operand));
+}
+
+// template specialization for c-style string
+inline QSharedPointer<Matcher<const char*> > equalTo(const char operand[])
+{
+    return QSharedPointer<Matcher<const char*> >(new IsEqual<const char*>(operand));
 }
 
 } // namespace Hamcrest

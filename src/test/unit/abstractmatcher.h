@@ -1,8 +1,10 @@
 #ifndef ABSTRACTMATCHER_H
 #define ABSTRACTMATCHER_H
 
+#include <QSharedPointer>
 #include <qtestcase.h>
 #include <matcher.h>
+#include <stringdescription.h>
 
 class AbstractMatcher
 {
@@ -38,18 +40,21 @@ public:
     template <typename T>
     static bool assertDescription(const QString &expected, const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const char *file, int line)
     {
-        Description *description = new StringDescription();
+        Hamcrest::Description *description = new Hamcrest::StringDescription();
         description->appendDescriptionOf(*matcher);
         return QTest::qCompare(description->toString(), expected, "description", "expected", file, line);
     }
 
     template <typename T>
-    static QString mismatchDescription(const QSharedPointer<Matcher<T> > &matcher, const T &arg)
+    static QString mismatchDescription(const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const T &arg)
     {
-      StringDescription description;
-      matcher->describeMismatch(arg, description);
-      return description.toString().trimmed();
+        Hamcrest::StringDescription description;
+        matcher->describeMismatch(arg, description);
+        return description.toString().trimmed();
     }
+
+    static bool assertMatches(const QSharedPointer<Hamcrest::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
+    static bool assertDoesNotMatch(const QSharedPointer<Hamcrest::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
 };
 
 #define ASSERT_MATCHES(matcher, arg) \

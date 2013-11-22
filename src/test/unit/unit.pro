@@ -17,7 +17,8 @@ SOURCES += \
     basedescriptiontest.cpp \
     basematchertest.cpp \
     isequaltest.cpp \
-    matcherasserttest.cpp
+    matcherasserttest.cpp \
+    abstractmatcher.cpp
 
 HEADERS += \
     basedescriptiontest.h \
