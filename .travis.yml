@@ -8,5 +8,6 @@ before_install:
   - sudo apt-get install -qq qtbase5-dev qtchooser
 script:
   - qtchooser -run-tool=qmake -qt=qt5
-  - make         
+  - make
+  - export LD_LIBRARY_PATH="../../core:$LD_LIBRARY_PATH"         
   - make check
