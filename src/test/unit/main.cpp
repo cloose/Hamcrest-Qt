@@ -2,6 +2,7 @@
 
 #include "basedescriptiontest.h"
 #include "basematchertest.h"
+#include "matcherasserttest.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,6 +13,9 @@ int main(int argc, char *argv[])
 
     BaseMatcherTest test2;
     ret += QTest::qExec(&test2, argc, argv);
+
+    MatcherAssertTest test3;
+    ret += QTest::qExec(&test3, argc, argv);
 
     return ret;
 }

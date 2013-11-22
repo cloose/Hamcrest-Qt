@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += \
     main.cpp \
     basedescriptiontest.cpp \
-    basematchertest.cpp
+    basematchertest.cpp \
+    matcherasserttest.cpp
 
 HEADERS += \
     basedescriptiontest.h \
-    basematchertest.h
+    basematchertest.h \
+    matcherasserttest.h
 
 ##################################################
 # Dependencies

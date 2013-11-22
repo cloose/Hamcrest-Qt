@@ -14,6 +14,7 @@ CONFIG += exceptions
 SOURCES += \
     basedescription.cpp \
     description.cpp \
+    matcherassert.cpp \
     stringdescription.cpp
 
 HEADERS += \
@@ -23,7 +24,8 @@ HEADERS += \
     matcher.h \
     matcherassert.h \
     selfdescribing.h \
-    stringdescription.h
+    stringdescription.h \
+    matcher/isequal.h
 
 unix:!symbian {
     maemo5 {
