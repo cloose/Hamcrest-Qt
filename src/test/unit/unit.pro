@@ -16,11 +16,13 @@ SOURCES += \
     main.cpp \
     basedescriptiontest.cpp \
     basematchertest.cpp \
+    isequaltest.cpp \
     matcherasserttest.cpp
 
 HEADERS += \
     basedescriptiontest.h \
     basematchertest.h \
+    isequaltest.h \
     matcherasserttest.h
 
 ##################################################
