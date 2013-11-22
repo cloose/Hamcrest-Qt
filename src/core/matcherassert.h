@@ -51,6 +51,18 @@ public:
         return assertThat(reason, actual, *matcher, file, line);
     }
 
+    template <typename T>
+    static bool assertThat(const T &actual, const Matcher<T> &matcher, const char *file, int line)
+    {
+        return assertThat(QStringLiteral(""), actual, matcher, file, line);
+    }
+
+    template <typename T>
+    static bool assertThat(const T &actual, const QSharedPointer<Matcher<T> > &matcher, const char *file, int line)
+    {
+        return assertThat(QStringLiteral(""), actual, *matcher, file, line);
+    }
+
 private:
     static void notifyAssertionListener(const QString &message)
     {
@@ -61,6 +73,13 @@ private:
 
     static QList<MatcherAssert::AssertionListener*> listeners;
 };
+
+
+#define ASSERT_THAT(actual, matcher) \
+do {\
+    if (!Hamcrest::MatcherAssert::assertThat(actual, matcher, __FILE__, __LINE__))\
+        return;\
+} while (0)
 
 
 #define ASSERT_THAT2(reason, actual, matcher) \

@@ -52,6 +52,23 @@ void MatcherAssertTest::includesDescriptionOfTestedValueInErrorMessage()
     QFAIL("should have failed");
 }
 
+void MatcherAssertTest::descriptionCanBeElided()
+{
+    QString expected = "expected";
+    QString actual = "actual";
+
+    QString expectedMessage = "\nExpected: \"expected\"\n     but: was \"actual\"";
+
+    try {
+        ASSERT_THAT(actual, equalTo(expected));
+    } catch (const AssertionError &e) {
+        QVERIFY(QString(e.what()).startsWith(expectedMessage));
+        return;
+    }
+
+    QFAIL("should have failed");
+}
+
 void MatcherAssertTest::cleanupTestCase()
 {
     delete listener;

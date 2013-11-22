@@ -11,6 +11,7 @@ private slots:
     void initTestCase();
 
     void includesDescriptionOfTestedValueInErrorMessage();
+    void descriptionCanBeElided();
 
     void cleanupTestCase();
 
