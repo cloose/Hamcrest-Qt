@@ -28,7 +28,8 @@ HEADERS += \
     tostring_p.h \
     matcher/areequal_p.h \
     matcher/is.h \
-    matcher/isequal.h
+    matcher/isequal.h \
+    matcher/isnot.h
 
 unix:!symbian {
     maemo5 {

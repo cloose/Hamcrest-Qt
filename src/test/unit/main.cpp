@@ -3,6 +3,7 @@
 #include "basedescriptiontest.h"
 #include "basematchertest.h"
 #include "isequaltest.h"
+#include "isnottest.h"
 #include "istest.h"
 #include "matcherasserttest.h"
 
@@ -19,11 +20,14 @@ int main(int argc, char *argv[])
     IsEqualTest test3;
     ret += QTest::qExec(&test3, argc, argv);
 
-    IsTest test4;
+    IsNotTest test4;
     ret += QTest::qExec(&test4, argc, argv);
 
-    MatcherAssertTest test5;
+    IsTest test5;
     ret += QTest::qExec(&test5, argc, argv);
+
+    MatcherAssertTest test6;
+    ret += QTest::qExec(&test6, argc, argv);
 
     return ret;
 }
