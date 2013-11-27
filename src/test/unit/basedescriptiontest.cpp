@@ -69,3 +69,10 @@ void BaseDescriptionTest::bracketsAppendedDoubleValue()
     baseDescription->appendValue((double)1.2);
     QCOMPARE(result, QStringLiteral("<1.2D>"));
 }
+
+void BaseDescriptionTest::bracketsAppendedBooleanValue()
+{
+    QScopedPointer<Description> baseDescription(new BaseDescriptionMock());
+    baseDescription->appendValue(false);
+    QCOMPARE(result, QStringLiteral("<false>"));
+}

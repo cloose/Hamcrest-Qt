@@ -14,6 +14,7 @@ private slots:
     void bracketsAppendedLongValue();
     void bracketsAppendedFloatValue();
     void bracketsAppendedDoubleValue();
+    void bracketsAppendedBooleanValue();
 };
 
 #endif // BASEDESCRIPTIONTEST_H

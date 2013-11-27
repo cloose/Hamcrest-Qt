@@ -64,7 +64,7 @@ template <typename T>
 Description &Description::appendValue(const T &value)
 {
     appendString("<");
-    appendString(ToString(value));
+    appendString(QTest::toString(value));
     appendString(">");
     return *this;
 }

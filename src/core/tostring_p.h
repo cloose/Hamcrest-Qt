@@ -1,28 +1,16 @@
 #ifndef HAMCREST_TOSTRING_P_H
 #define HAMCREST_TOSTRING_P_H
 
-#include <string>
-#include <sstream>
-#include <QString>
-#include <QStringList>
+#include <qtestcase.h>
 
-template <typename T>
-QString ToString(const T &value)
+namespace QTest
 {
-    std::stringstream stream;
-    stream << value;
 
-    return QString::fromStdString(stream.str());
+inline char* toString(bool value)
+{
+    return value ? qstrdup("true") : qstrdup("false");
 }
 
-inline QString ToString(bool value)
-{
-    return value ? "true" : "false";
-}
-
-inline QString ToString(const QStringList &list)
-{
-    return list.join(",");
-}
+} // namespace QTest
 
 #endif // HAMCREST_TOSTRING_P_H
