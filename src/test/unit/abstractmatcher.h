@@ -40,9 +40,9 @@ public:
     template <typename T>
     static bool assertDescription(const QString &expected, const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const char *file, int line)
     {
-        Hamcrest::Description *description = new Hamcrest::StringDescription();
-        description->appendDescriptionOf(*matcher);
-        return QTest::qCompare(description->toString(), expected, "description", "expected", file, line);
+        Hamcrest::StringDescription description;
+        description.appendDescriptionOf(*matcher);
+        return QTest::qCompare(description.toString(), expected, "description", "expected", file, line);
     }
 
     template <typename T>
