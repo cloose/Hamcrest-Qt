@@ -9,7 +9,7 @@ QT       += testlib
 TARGET = hamcrestqtcore
 TEMPLATE = lib
 
-CONFIG += exceptions
+CONFIG += exceptions c++11
 
 SOURCES += \
     basedescription.cpp \
