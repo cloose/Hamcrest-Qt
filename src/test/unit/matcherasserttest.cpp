@@ -11,6 +11,7 @@ class AssertionError : public std::exception
 {
 public:
     AssertionError(const char *msg) : message(msg) {}
+    ~AssertionError() throw() { delete[] message; }
     virtual const char *what() const throw() { return message; }
 
 private:
@@ -23,7 +24,7 @@ class MatcherAssertTest::TestAssertionListener : public MatcherAssert::Assertion
 public:
     virtual void assertionError(const QString &message)
     {
-        throw AssertionError(message.toLatin1());
+        throw AssertionError(qstrdup(message.toLatin1()));
     }
 };
 
