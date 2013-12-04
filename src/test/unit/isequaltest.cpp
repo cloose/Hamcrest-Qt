@@ -3,7 +3,7 @@
 #include <QtTest/QtTest>
 
 #include <matcher/isequal.h>
-using namespace Hamcrest;
+using namespace HamcrestQt;
 
 #include "abstractmatcher.h"
 

@@ -1,12 +1,12 @@
-#ifndef HAMCREST_MATCHERASSERT_H
-#define HAMCREST_MATCHERASSERT_H
+#ifndef HAMCRESTQT_MATCHERASSERT_H
+#define HAMCRESTQT_MATCHERASSERT_H
 
 #include <QList>
 #include <qtestcase.h>
 #include "matcher.h"
 #include "stringdescription.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 class MatcherAssert
 {
@@ -77,17 +77,17 @@ private:
 
 #define ASSERT_THAT(actual, matcher) \
 do {\
-    if (!Hamcrest::MatcherAssert::assertThat(actual, matcher, __FILE__, __LINE__))\
+    if (!HamcrestQt::MatcherAssert::assertThat(actual, matcher, __FILE__, __LINE__))\
         return;\
 } while (0)
 
 
 #define ASSERT_THAT2(reason, actual, matcher) \
 do {\
-    if (!Hamcrest::MatcherAssert::assertThat(reason, actual, matcher, __FILE__, __LINE__))\
+    if (!HamcrestQt::MatcherAssert::assertThat(reason, actual, matcher, __FILE__, __LINE__))\
         return;\
 } while (0)
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_MATCHERASSERT_H
+#endif // HAMCRESTQT_MATCHERASSERT_H

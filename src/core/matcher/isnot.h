@@ -1,10 +1,10 @@
-#ifndef HAMCREST_ISNOT_H
-#define HAMCREST_ISNOT_H
+#ifndef HAMCRESTQT_ISNOT_H
+#define HAMCRESTQT_ISNOT_H
 
 #include "basematcher.h"
 #include "isequal.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 /**
  * Calculates the logical negation of a matcher.
@@ -69,6 +69,6 @@ inline QSharedPointer<Matcher<const char*> > _not(const char *operand)
     return QSharedPointer<Matcher<const char*> >(new IsNot<const char*>(equalTo(operand)));
 }
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // ISNOT_H
+#endif // HAMCRESTQT_ISNOT_H

@@ -1,11 +1,11 @@
-#ifndef HAMCREST_ISEQUAL_H
-#define HAMCREST_ISEQUAL_H
+#ifndef HAMCRESTQT_ISEQUAL_H
+#define HAMCRESTQT_ISEQUAL_H
 
 #include "basematcher.h"
 #include "description.h"
 #include "areequal_p.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 /**
  * Is the value equal to another value, as tested by the
@@ -43,6 +43,6 @@ inline QSharedPointer<Matcher<const char*> > equalTo(const char operand[])
     return QSharedPointer<Matcher<const char*> >(new IsEqual<const char*>(operand));
 }
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_ISEQUAL_H
+#endif // HAMCRESTQT_ISEQUAL_H

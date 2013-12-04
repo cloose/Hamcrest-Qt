@@ -1,10 +1,10 @@
-#ifndef HAMCREST_IS_H
-#define HAMCREST_IS_H
+#ifndef HAMCRESTQT_IS_H
+#define HAMCRESTQT_IS_H
 
 #include "basematcher.h"
 #include "isequal.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 /**
  * Decorates another Matcher, retaining the behaviour but allowing tests
@@ -56,6 +56,6 @@ inline QSharedPointer<Matcher<const char*> > is(const char *operand)
     return QSharedPointer<Matcher<const char*> >(new Is<const char*>(equalTo(operand)));
 }
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_IS_H
+#endif // HAMCRESTQT_IS_H

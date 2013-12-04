@@ -1,7 +1,7 @@
-#ifndef HAMCREST_SELFDESCRIBING_H
-#define HAMCREST_SELFDESCRIBING_H
+#ifndef HAMCRESTQT_SELFDESCRIBING_H
+#define HAMCRESTQT_SELFDESCRIBING_H
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 class Description;
 
@@ -21,6 +21,6 @@ public:
     virtual void describeTo(Description &description) const = 0;
 };
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_SELFDESCRIBING_H
+#endif // HAMCRESTQT_SELFDESCRIBING_H

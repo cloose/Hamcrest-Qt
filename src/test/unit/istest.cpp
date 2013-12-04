@@ -5,7 +5,7 @@
 #include <matcher/is.h>
 #include <matcher/isequal.h>
 #include <matcher.h>
-using namespace Hamcrest;
+using namespace HamcrestQt;
 
 #include "abstractmatcher.h"
 

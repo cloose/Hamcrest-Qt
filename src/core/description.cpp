@@ -1,6 +1,6 @@
 #include "description.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 Description &Description::appendValue(short value)
 {
@@ -87,4 +87,4 @@ void Description::toCppSyntax(const QChar &ch)
         append(ch);
 }
 
-} // namespace Hamcrest
+} // namespace HamcrestQt

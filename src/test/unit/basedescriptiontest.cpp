@@ -3,7 +3,7 @@
 #include <QtTest/QtTest>
 
 #include <basedescription.h>
-using namespace Hamcrest;
+using namespace HamcrestQt;
 
 namespace {
 

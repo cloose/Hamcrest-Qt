@@ -4,7 +4,7 @@
 
 #include <basematcher.h>
 #include <description.h>
-using namespace Hamcrest;
+using namespace HamcrestQt;
 
 namespace {
 class MatcherMock : public BaseMatcher<int>

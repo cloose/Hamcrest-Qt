@@ -4,7 +4,7 @@
 
 #include <matcher/isequal.h>
 #include <matcherassert.h>
-using namespace Hamcrest;
+using namespace HamcrestQt;
 
 // custom exception for assertion errors
 class AssertionError : public std::exception

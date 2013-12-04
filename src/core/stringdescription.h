@@ -1,9 +1,9 @@
-#ifndef HAMCREST_STRINGDESCRIPTION_H
-#define HAMCREST_STRINGDESCRIPTION_H
+#ifndef HAMCRESTQT_STRINGDESCRIPTION_H
+#define HAMCRESTQT_STRINGDESCRIPTION_H
 
 #include "basedescription.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 class SelfDescribing;
 
@@ -40,6 +40,6 @@ private:
     QString out;
 };
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_STRINGDESCRIPTION_H
+#endif // HAMCRESTQT_STRINGDESCRIPTION_H

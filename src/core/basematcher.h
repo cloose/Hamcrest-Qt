@@ -1,12 +1,12 @@
-#ifndef HAMCREST_BASEMATCHER_H
-#define HAMCREST_BASEMATCHER_H
+#ifndef HAMCRESTQT_BASEMATCHER_H
+#define HAMCRESTQT_BASEMATCHER_H
 
 #include "matcher.h"
 
 #include "description.h"
 #include "stringdescription.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 /**
  * BaseClass for all Matcher implementations.
@@ -28,6 +28,6 @@ public:
     }
 };
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_BASEMATCHER_H
+#endif // HAMCRESTQT_BASEMATCHER_H

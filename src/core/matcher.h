@@ -1,9 +1,9 @@
-#ifndef HAMCREST_MATCHER_H
-#define HAMCREST_MATCHER_H
+#ifndef HAMCRESTQT_MATCHER_H
+#define HAMCRESTQT_MATCHER_H
 
 #include "selfdescribing.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 class Description;
 
@@ -45,6 +45,6 @@ public:
     virtual QString toString() const = 0;
 };
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_MATCHER_H
+#endif // HAMCRESTQT_MATCHER_H

@@ -1,10 +1,10 @@
-#ifndef HAMCREST_DESCRIPTION_H
-#define HAMCREST_DESCRIPTION_H
+#ifndef HAMCRESTQT_DESCRIPTION_H
+#define HAMCRESTQT_DESCRIPTION_H
 
 #include <QString>
 #include "tostring_p.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 class SelfDescribing;
 
@@ -69,6 +69,6 @@ Description &Description::appendValue(const T &value)
     return *this;
 }
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_DESCRIPTION_H
+#endif // HAMCRESTQT_DESCRIPTION_H

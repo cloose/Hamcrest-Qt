@@ -2,7 +2,7 @@
 
 #include "selfdescribing.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 StringDescription::StringDescription()
 {
@@ -34,4 +34,4 @@ void StringDescription::append(const QChar &c)
     out.append(c);
 }
 
-} // namespace Hamcrest
+} // namespace HamcrestQt

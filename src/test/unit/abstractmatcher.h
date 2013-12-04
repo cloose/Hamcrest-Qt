@@ -10,13 +10,13 @@ class AbstractMatcher
 {
 public:
     template <typename T>
-    static bool assertMatches(const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const T &arg, const char *file, int line)
+    static bool assertMatches(const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const T &arg, const char *file, int line)
     {
         return assertMatches(QString("Expected match, but mismatched"), matcher, arg, file, line);
     }
 
     template <typename T>
-    static bool assertMatches(const QString &message, const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const T &arg, const char *file, int line)
+    static bool assertMatches(const QString &message, const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const T &arg, const char *file, int line)
     {
         if (!matcher->matches(arg)) {
             QTest::qFail(QString("%1 because: '%2'").arg(message).arg(mismatchDescription(matcher, arg)).toLatin1(), file, line);
@@ -26,35 +26,35 @@ public:
     }
 
     template <typename T>
-    static bool assertDoesNotMatch(const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const T &arg, const char *file, int line)
+    static bool assertDoesNotMatch(const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const T &arg, const char *file, int line)
     {
         return assertDoesNotMatch(QStringLiteral("Unexpected match"), matcher, arg, file, line);
     }
 
     template <typename T>
-    static bool assertDoesNotMatch(const QString &message, const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const T &arg, const char *file, int line)
+    static bool assertDoesNotMatch(const QString &message, const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const T &arg, const char *file, int line)
     {
         return QTest::qVerify(!matcher->matches(arg), "matcher", message.toLatin1(), file, line);
     }
 
     template <typename T>
-    static bool assertDescription(const QString &expected, const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const char *file, int line)
+    static bool assertDescription(const QString &expected, const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const char *file, int line)
     {
-        Hamcrest::StringDescription description;
+        HamcrestQt::StringDescription description;
         description.appendDescriptionOf(*matcher);
         return QTest::qCompare(description.toString(), expected, "description", "expected", file, line);
     }
 
     template <typename T>
-    static QString mismatchDescription(const QSharedPointer<Hamcrest::Matcher<T> > &matcher, const T &arg)
+    static QString mismatchDescription(const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const T &arg)
     {
-        Hamcrest::StringDescription description;
+        HamcrestQt::StringDescription description;
         matcher->describeMismatch(arg, description);
         return description.toString().trimmed();
     }
 
-    static bool assertMatches(const QSharedPointer<Hamcrest::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
-    static bool assertDoesNotMatch(const QSharedPointer<Hamcrest::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
+    static bool assertMatches(const QSharedPointer<HamcrestQt::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
+    static bool assertDoesNotMatch(const QSharedPointer<HamcrestQt::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
 };
 
 #define ASSERT_MATCHES(matcher, arg) \

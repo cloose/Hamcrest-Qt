@@ -1,9 +1,9 @@
-#ifndef HAMCREST_BASEDESCRIPTION_H
-#define HAMCREST_BASEDESCRIPTION_H
+#ifndef HAMCRESTQT_BASEDESCRIPTION_H
+#define HAMCRESTQT_BASEDESCRIPTION_H
 
 #include "description.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 
 /**
@@ -26,6 +26,6 @@ protected:
     virtual void appendString(const QString &str);
 };
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
 
-#endif // HAMCREST_BASEDESCRIPTION_H
+#endif // HAMCRESTQT_BASEDESCRIPTION_H

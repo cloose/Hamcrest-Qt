@@ -1,7 +1,7 @@
 #include "matcherassert.h"
 
-namespace Hamcrest {
+namespace HamcrestQt {
 
 QList<MatcherAssert::AssertionListener*> MatcherAssert::listeners;
 
-} // namespace Hamcrest
+} // namespace HamcrestQt
