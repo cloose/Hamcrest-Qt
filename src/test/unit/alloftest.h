@@ -8,6 +8,8 @@ class AllOfTest : public QObject
     Q_OBJECT
     
 private slots:
+    void evaluatesToTheTheLogicalConjunctionOfTwoOtherMatchers();
+    void evaluatesToTheTheLogicalConjunctionOfManyOtherMatchers();
     void hasAReadableDescription();
     void hasAMismatchDescriptionDescribingTheFirstFailingMatch();
 };
