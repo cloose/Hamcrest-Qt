@@ -65,7 +65,9 @@ public:
     }
 
     static bool assertMatches(const QSharedPointer<HamcrestQt::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
+    static bool assertMatches(const char *message, const QSharedPointer<HamcrestQt::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
     static bool assertDoesNotMatch(const QSharedPointer<HamcrestQt::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
+    static bool assertDoesNotMatch(const char *message, const QSharedPointer<HamcrestQt::Matcher<const char*> > &matcher, const char *arg, const char *file, int line);
 };
 
 #define ASSERT_MATCHES(matcher, arg) \
@@ -74,9 +76,21 @@ do {\
         return;\
 } while (0)
 
+#define ASSERT_MATCHES_MSG(message, matcher, arg) \
+do {\
+    if (!AbstractMatcher::assertMatches(message, matcher, arg, __FILE__, __LINE__)) \
+        return;\
+} while (0)
+
 #define ASSERT_DOES_NOT_MATCH(matcher, arg) \
 do {\
     if (!AbstractMatcher::assertDoesNotMatch(matcher, arg, __FILE__, __LINE__)) \
+        return;\
+} while (0)
+
+#define ASSERT_DOES_NOT_MATCH_MSG(message, matcher, arg) \
+do {\
+    if (!AbstractMatcher::assertDoesNotMatch(message, matcher, arg, __FILE__, __LINE__)) \
         return;\
 } while (0)
 
