@@ -46,7 +46,8 @@ QSharedPointer<Matcher<T> > allOf(const QList<QSharedPointer<Matcher<T> > > &mat
 }
 
 template <typename T>
-QSharedPointer<Matcher<T> > allOf(const QSharedPointer<Matcher<T> > &first, const QSharedPointer<Matcher<T> > &second)
+QSharedPointer<Matcher<T> > allOf(const QSharedPointer<Matcher<T> > &first,
+                                  const QSharedPointer<Matcher<T> > &second)
 {
     QList<QSharedPointer<Matcher<T> > > matchers;
     matchers.append(first);
@@ -63,6 +64,54 @@ QSharedPointer<Matcher<T> > allOf(const QSharedPointer<Matcher<T> > &first,
     matchers.append(first);
     matchers.append(second);
     matchers.append(third);
+    return allOf(matchers);
+}
+
+template <typename T>
+QSharedPointer<Matcher<T> > allOf(const QSharedPointer<Matcher<T> > &first,
+                                  const QSharedPointer<Matcher<T> > &second,
+                                  const QSharedPointer<Matcher<T> > &third,
+                                  const QSharedPointer<Matcher<T> > &fourth)
+{
+    QList<QSharedPointer<Matcher<T> > > matchers;
+    matchers.append(first);
+    matchers.append(second);
+    matchers.append(third);
+    matchers.append(fourth);
+    return allOf(matchers);
+}
+
+template <typename T>
+QSharedPointer<Matcher<T> > allOf(const QSharedPointer<Matcher<T> > &first,
+                                  const QSharedPointer<Matcher<T> > &second,
+                                  const QSharedPointer<Matcher<T> > &third,
+                                  const QSharedPointer<Matcher<T> > &fourth,
+                                  const QSharedPointer<Matcher<T> > &fifth)
+{
+    QList<QSharedPointer<Matcher<T> > > matchers;
+    matchers.append(first);
+    matchers.append(second);
+    matchers.append(third);
+    matchers.append(fourth);
+    matchers.append(fifth);
+    return allOf(matchers);
+}
+
+template <typename T>
+QSharedPointer<Matcher<T> > allOf(const QSharedPointer<Matcher<T> > &first,
+                                  const QSharedPointer<Matcher<T> > &second,
+                                  const QSharedPointer<Matcher<T> > &third,
+                                  const QSharedPointer<Matcher<T> > &fourth,
+                                  const QSharedPointer<Matcher<T> > &fifth,
+                                  const QSharedPointer<Matcher<T> > &sixth)
+{
+    QList<QSharedPointer<Matcher<T> > > matchers;
+    matchers.append(first);
+    matchers.append(second);
+    matchers.append(third);
+    matchers.append(fourth);
+    matchers.append(fifth);
+    matchers.append(sixth);
     return allOf(matchers);
 }
 
