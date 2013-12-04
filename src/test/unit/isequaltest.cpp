@@ -36,3 +36,9 @@ void IsEqualTest::comparesTheElementsOfAQList()
     ASSERT_DOES_NOT_MATCH(matcher, s3);
     ASSERT_DOES_NOT_MATCH(matcher, s4);
 }
+
+void IsEqualTest::returnsAnObviousDescriptionIfCreatedWithANestedMatcherByMistake()
+{
+    const QSharedPointer<Matcher<const char*> > innerMatcher = equalTo("NestedMatcher");
+    ASSERT_DESCRIPTION("<" + innerMatcher->toString() + ">", equalTo(innerMatcher));
+}

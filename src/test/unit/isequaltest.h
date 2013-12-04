@@ -10,6 +10,7 @@ class IsEqualTest : public QObject
 private slots:
     void comparesObjectsUsingEqualsMethod();
     void comparesTheElementsOfAQList();
+    void returnsAnObviousDescriptionIfCreatedWithANestedMatcherByMistake();
 };
 
 #endif // ISEQUALTEST_H
