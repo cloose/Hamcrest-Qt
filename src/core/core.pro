@@ -15,12 +15,15 @@ SOURCES += \
     basedescription.cpp \
     description.cpp \
     matcherassert.cpp \
-    stringdescription.cpp
+    stringdescription.cpp \
+    matcher/stringendswith.cpp \
+    matcher/stringstartswith.cpp
 
 HEADERS += \
     basedescription.h \
     basematcher.h \
     description.h \
+    diagnosingmatcher.h \
     matcher.h \
     matcherassert.h \
     selfdescribing.h \
@@ -31,7 +34,9 @@ HEADERS += \
     matcher/is.h \
     matcher/isequal.h \
     matcher/isnot.h \
-    diagnosingmatcher.h
+    matcher/stringendswith.h \
+    matcher/stringstartswith.h \
+    matcher/substringmatcher.h
 
 unix:!symbian {
     maemo5 {
