@@ -26,10 +26,12 @@ HEADERS += \
     selfdescribing.h \
     stringdescription.h \
     tostring_p.h \
+    matcher/allof.h \
     matcher/areequal_p.h \
     matcher/is.h \
     matcher/isequal.h \
-    matcher/isnot.h
+    matcher/isnot.h \
+    diagnosingmatcher.h
 
 unix:!symbian {
     maemo5 {

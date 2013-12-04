@@ -1,5 +1,6 @@
 #include <QtTest/QtTest>
 
+#include "alloftest.h"
 #include "basedescriptiontest.h"
 #include "basematchertest.h"
 #include "isequaltest.h"
@@ -11,23 +12,26 @@ int main(int argc, char *argv[])
 {
     int ret = 0;
 
-    BaseDescriptionTest test;
+    AllOfTest test;
     ret += QTest::qExec(&test, argc, argv);
 
-    BaseMatcherTest test2;
+    BaseDescriptionTest test2;
     ret += QTest::qExec(&test2, argc, argv);
 
-    IsEqualTest test3;
+    BaseMatcherTest test3;
     ret += QTest::qExec(&test3, argc, argv);
 
-    IsNotTest test4;
+    IsEqualTest test4;
     ret += QTest::qExec(&test4, argc, argv);
 
-    IsTest test5;
+    IsNotTest test5;
     ret += QTest::qExec(&test5, argc, argv);
 
-    MatcherAssertTest test6;
+    IsTest test6;
     ret += QTest::qExec(&test6, argc, argv);
+
+    MatcherAssertTest test7;
+    ret += QTest::qExec(&test7, argc, argv);
 
     return ret;
 }

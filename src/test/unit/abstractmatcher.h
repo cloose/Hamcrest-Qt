@@ -46,6 +46,17 @@ public:
     }
 
     template <typename T>
+    static bool assertMismatchDescription(const QString &expected, const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const T &arg, const char *file, int line)
+    {
+        return QTest::qCompare(mismatchDescription(matcher, arg), expected, "description", "expected", file, line);
+    }
+
+    static bool assertMismatchDescription(const QString &expected, const QSharedPointer<HamcrestQt::Matcher<const char*> > &matcher, const char *arg, const char *file, int line)
+    {
+        return QTest::qCompare(mismatchDescription(matcher, arg), expected, "description", "expected", file, line);
+    }
+
+    template <typename T>
     static QString mismatchDescription(const QSharedPointer<HamcrestQt::Matcher<T> > &matcher, const T &arg)
     {
         HamcrestQt::StringDescription description;
@@ -72,6 +83,12 @@ do {\
 #define ASSERT_DESCRIPTION(expected, matcher) \
 do {\
     if (!AbstractMatcher::assertDescription(expected, matcher, __FILE__, __LINE__)) \
+        return;\
+} while (0)
+
+#define ASSERT_MISMATCH_DESCRIPTION(expected, matcher, arg) \
+do {\
+    if (!AbstractMatcher::assertMismatchDescription(expected, matcher, arg, __FILE__, __LINE__)) \
         return;\
 } while (0)
 

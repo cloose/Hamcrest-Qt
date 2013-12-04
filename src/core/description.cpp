@@ -2,6 +2,16 @@
 
 namespace HamcrestQt {
 
+class Description::NullDescription : public Description
+{
+    virtual Description &appendText(const QString &) { return *this; }
+    virtual Description &appendDescriptionOf(const SelfDescribing &) { return *this; }
+    virtual QString toString() const { return QStringLiteral(""); }
+    virtual void appendString(const QString &) {}
+    virtual void append(const QChar &) {}
+
+};
+
 Description &Description::appendValue(short value)
 {
     appendString("<");
@@ -62,6 +72,12 @@ Description &Description::appendValue(const QChar &value)
     toCppSyntax(value);
     append('"');
     return *this;
+}
+
+Description &Description::NONE()
+{
+    static NullDescription nullDescription;
+    return nullDescription;
 }
 
 void Description::toCppSyntaxString(const QString &unformatted)

@@ -47,9 +47,35 @@ public:
     Description &appendValue(const QChar &value);
 
     /**
+     * Appends a list of {@link org.hamcrest.SelfDescribing} objects
+     * to the description.
+     */
+    template <typename Iterator>
+    Description &appendList(const QString &start, const QString &separator, const QString &end,
+                            Iterator startIterator, Iterator endIterator)
+    {
+        bool separate = false;
+
+        appendString(start);
+        while (startIterator != endIterator) {
+            if (separate) appendString(separator);
+            SelfDescribing &selfDescribing = dynamic_cast<SelfDescribing&>(**startIterator);
+            appendDescriptionOf(selfDescribing);
+            startIterator++;
+            separate = true;
+        }
+        appendString(end);
+
+        return *this;
+    }
+
+    /**
      * Converts the description into a {@link QString} value.
      */
     virtual QString toString() const = 0;
+
+    class NullDescription;
+    static Description &NONE();
 
 protected:
     virtual void appendString(const QString &str) = 0;
