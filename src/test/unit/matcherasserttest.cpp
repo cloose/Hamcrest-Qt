@@ -70,6 +70,53 @@ void MatcherAssertTest::descriptionCanBeElided()
     QFAIL("should have failed");
 }
 
+void MatcherAssertTest::canTestBooleanDirectly()
+{
+    ASSERT_THAT("success reason message", true);
+
+    try {
+        ASSERT_THAT("failing reason message", false);
+    } catch (const AssertionError &e) {
+        QCOMPARE(e.what(), "failing reason message");
+        return;
+    }
+
+    QFAIL("should have failed");
+}
+
+class MatcherWithCustomMismatchDescription : public BaseMatcher<QString>
+{
+public:
+    virtual bool matches(const QString &) const
+    {
+        return false;
+    }
+
+    virtual void describeTo(Description &description) const
+    {
+        description.appendText("Something cool");
+    }
+
+    virtual void describeMismatch(const QString &, Description &mismatchDescription) const
+    {
+        mismatchDescription.appendText("Not cool");
+    }
+};
+
+void MatcherAssertTest::includesMismatchDescription()
+{
+    Matcher<QString> *matcherWithCustomMismatchDescription = new MatcherWithCustomMismatchDescription();
+
+    QString expectedMessage = "\nExpected: Something cool\n     but: Not cool";
+
+    try {
+        ASSERT_THAT(QStringLiteral("Value"), *matcherWithCustomMismatchDescription);
+        QFAIL("should have failed");
+    } catch (const AssertionError &e) {
+        QCOMPARE(QString(e.what()), expectedMessage);
+    }
+}
+
 void MatcherAssertTest::cleanupTestCase()
 {
     delete listener;

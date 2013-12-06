@@ -63,6 +63,20 @@ public:
         return assertThat(QStringLiteral(""), actual, *matcher, file, line);
     }
 
+    static bool assertThat(const QString &reason, bool assertion, const char *file, int line)
+    {
+        if (!assertion) {
+            // notify listeners
+            notifyAssertionListener(reason);
+
+            // assertion failed
+            QTest::qFail(reason.toLatin1(), file, line);
+            return false;
+        }
+
+        return true;
+    }
+
 private:
     static void notifyAssertionListener(const QString &message)
     {

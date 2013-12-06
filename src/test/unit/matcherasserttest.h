@@ -12,6 +12,8 @@ private slots:
 
     void includesDescriptionOfTestedValueInErrorMessage();
     void descriptionCanBeElided();
+    void canTestBooleanDirectly();
+    void includesMismatchDescription();
 
     void cleanupTestCase();
 
