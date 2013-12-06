@@ -44,7 +44,7 @@ void MatcherAssertTest::includesDescriptionOfTestedValueInErrorMessage()
     QString expectedMessage = "identifier\nExpected: \"expected\"\n     but: was \"actual\"";
 
     try {
-        ASSERT_THAT2("identifier", actual, equalTo(expected));
+        ASSERT_THAT_MSG("identifier", actual, equalTo(expected));
     } catch (const AssertionError &e) {
         QVERIFY(QString(e.what()).startsWith(expectedMessage));
         return;

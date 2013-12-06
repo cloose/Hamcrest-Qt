@@ -82,7 +82,7 @@ do {\
 } while (0)
 
 
-#define ASSERT_THAT2(reason, actual, matcher) \
+#define ASSERT_THAT_MSG(reason, actual, matcher) \
 do {\
     if (!HamcrestQt::MatcherAssert::assertThat(reason, actual, matcher, __FILE__, __LINE__))\
         return;\
