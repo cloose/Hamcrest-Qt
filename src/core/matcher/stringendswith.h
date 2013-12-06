@@ -2,6 +2,7 @@
 #define HAMCRESTQT_STRINGENDSWITH
 
 #include <QSharedPointer>
+
 #include "matcher.h"
 #include "substringmatcher.h"
 

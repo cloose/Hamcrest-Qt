@@ -2,6 +2,7 @@
 #define HAMCRESTQT_STRINGSTARTSWITH_H
 
 #include <QSharedPointer>
+
 #include "matcher.h"
 #include "substringmatcher.h"
 

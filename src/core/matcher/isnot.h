@@ -1,6 +1,8 @@
 #ifndef HAMCRESTQT_ISNOT_H
 #define HAMCRESTQT_ISNOT_H
 
+#include <QSharedPointer>
+
 #include "basematcher.h"
 #include "isequal.h"
 

@@ -2,6 +2,8 @@
 #define HAMCRESTQT_IS_H
 
 #include <QList>
+#include <QSharedPointer>
+
 #include "diagnosingmatcher.h"
 
 namespace HamcrestQt {
