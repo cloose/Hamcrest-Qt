@@ -28,7 +28,7 @@ protected:
  * @param suffix
  * the substring that the returned matcher will expect at the end of any examined string
  */
-QSharedPointer<Matcher<QString> > endsWith(const QString &suffix)
+inline QSharedPointer<Matcher<QString> > endsWith(const QString &suffix)
 {
     return QSharedPointer<Matcher<QString> >(new StringEndsWith(suffix));
 }

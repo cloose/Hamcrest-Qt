@@ -28,7 +28,7 @@ protected:
  * @param prefix
  * the substring that the returned matcher will expect at the start of any examined string
  */
-QSharedPointer<Matcher<QString> > startsWith(const QString &prefix)
+inline QSharedPointer<Matcher<QString> > startsWith(const QString &prefix)
 {
     return QSharedPointer<Matcher<QString> >(new StringStartsWith(prefix));
 }

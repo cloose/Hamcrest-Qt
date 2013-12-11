@@ -29,7 +29,7 @@ protected:
  * the substring that the returned matcher will expect to find within any examined string
  *
  */
-QSharedPointer<Matcher<QString> > containsString(const QString &substring)
+inline QSharedPointer<Matcher<QString> > containsString(const QString &substring)
 {
     return QSharedPointer<Matcher<QString> >(new StringContains(substring));
 }
