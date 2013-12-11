@@ -1,8 +1,11 @@
 Hamcrest-Qt
 ===========
 
-Hamcrest matchers for C++/Qt
+[Hamcrest](http://hamcrest.org/) matchers for C++/Qt
 
+This is an attempt to port the [Java Hamcrest](https://github.com/hamcrest/JavaHamcrest) library to C++/Qt and make it usable with [Qt Test](http://qt-project.org/doc/qt-5.1/qttestlib/qttest-index.html).
+
+Like the original library, this code is licensed under [BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause).
 
 # EXPERIMENTAL
 This code is pre-alpha quality. DO NOT USE IN PRODUCTION CODE.
@@ -15,6 +18,19 @@ This code is pre-alpha quality. DO NOT USE IN PRODUCTION CODE.
 Creates a matcher that matches if the examined object matches **ALL** of the specified matchers.
 
     ASSERT_THAT(QStringLiteral("myValue"), allOf(startsWith("my"), containsString("Val")));
+
+#### anyOf
+
+Creates a matcher that matches if the examined object matches **ANY** of the specified matchers.
+
+    ASSERT_THAT(QStringLiteral("myValue"), anyOf(startsWith("foo"), containsString("Val")));
+
+#### containsString
+
+Creates a matcher that matches if the examined QString contains the specified
+QString anywhere.
+
+    ASSERT_THAT(QStringLiteral("myStringOfNote"), containsString("ring"));
 
 #### endsWith
 
