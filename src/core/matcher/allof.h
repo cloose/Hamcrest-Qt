@@ -1,5 +1,5 @@
-#ifndef HAMCRESTQT_IS_H
-#define HAMCRESTQT_IS_H
+#ifndef HAMCRESTQT_ALLOF_H
+#define HAMCRESTQT_ALLOF_H
 
 #include <QList>
 #include <QSharedPointer>
@@ -119,4 +119,4 @@ QSharedPointer<Matcher<T> > allOf(const QSharedPointer<Matcher<T> > &first,
 
 } // namespace HamcrestQt
 
-#endif // HAMCRESTQT_IS_H
+#endif // HAMCRESTQT_ALLOF_H
