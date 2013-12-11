@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hamcrest-qt by cloose</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Hamcrest-qt</h1>
+        <p>Hamcrest matchers for C++/Qt</p>
+
+        <p class="view"><a href="https://github.com/cloose/Hamcrest-Qt">View the Project on GitHub <small>cloose/Hamcrest-Qt</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/cloose/Hamcrest-Qt/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cloose/Hamcrest-Qt/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cloose/Hamcrest-Qt">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="hamcrest-qt" class="anchor" href="#hamcrest-qt"><span class="octicon octicon-link"></span></a>Hamcrest-Qt</h1>
+
+<p><a href="http://hamcrest.org/">Hamcrest</a> matchers for C++/Qt</p>
+
+<p>This is an attempt to port the <a href="https://github.com/hamcrest/JavaHamcrest">Java Hamcrest</a> library to C++/Qt and make it usable with <a href="http://qt-project.org/doc/qt-5.1/qttestlib/qttest-index.html">Qt Test</a>.</p>
+
+<p>Like the original library, this code is licensed under <a href="http://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause License</a>.</p>
+
+<h1>
+<a name="experimental" class="anchor" href="#experimental"><span class="octicon octicon-link"></span></a>EXPERIMENTAL</h1>
+
+<p>This code is pre-alpha quality. DO NOT USE IN PRODUCTION CODE.</p>
+
+<h2>
+<a name="supported-matchers" class="anchor" href="#supported-matchers"><span class="octicon octicon-link"></span></a>Supported Matchers</h2>
+
+<h4>
+<a name="allof" class="anchor" href="#allof"><span class="octicon octicon-link"></span></a>allOf</h4>
+
+<p>Creates a matcher that matches if the examined object matches <strong>ALL</strong> of the specified matchers.</p>
+
+<pre><code>ASSERT_THAT(QStringLiteral("myValue"), allOf(startsWith("my"), containsString("Val")));
+</code></pre>
+
+<h4>
+<a name="anyof" class="anchor" href="#anyof"><span class="octicon octicon-link"></span></a>anyOf</h4>
+
+<p>Creates a matcher that matches if the examined object matches <strong>ANY</strong> of the specified matchers.</p>
+
+<pre><code>ASSERT_THAT(QStringLiteral("myValue"), anyOf(startsWith("foo"), containsString("Val")));
+</code></pre>
+
+<h4>
+<a name="containsstring" class="anchor" href="#containsstring"><span class="octicon octicon-link"></span></a>containsString</h4>
+
+<p>Creates a matcher that matches if the examined QString contains the specified
+QString anywhere.</p>
+
+<pre><code>ASSERT_THAT(QStringLiteral("myStringOfNote"), containsString("ring"));
+</code></pre>
+
+<h4>
+<a name="endswith" class="anchor" href="#endswith"><span class="octicon octicon-link"></span></a>endsWith</h4>
+
+<p>Creates a matcher that matches if the examined QString ends with the specified
+QString.</p>
+
+<pre><code>ASSERT_THAT(QStringLiteral("myStringOfNote"), endsWith("Note"));
+</code></pre>
+
+<h4>
+<a name="equalto" class="anchor" href="#equalto"><span class="octicon octicon-link"></span></a>equalTo</h4>
+
+<p>Creates a matcher that matches when the examined object is logically equal to the specified <code>operand</code>, as determined by calling the operator==() method on the <strong>examined</strong> object.</p>
+
+<pre><code>ASSERT_THAT(QStringLiteral("foo"), equalTo("foo"));
+</code></pre>
+
+<h4>
+<a name="is" class="anchor" href="#is"><span class="octicon octicon-link"></span></a>is</h4>
+
+<p>Decorates another Matcher, retaining its behaviour, but allowing tests to be slightly more expressive.</p>
+
+<pre><code>ASSERT_THAT(cheese, is(equalTo(smelly)));
+</code></pre>
+
+<h4>
+<a name="_not" class="anchor" href="#_not"><span class="octicon octicon-link"></span></a>_not</h4>
+
+<p>Creates a matcher that wraps an existing matcher, but inverts the logic by which it will match.</p>
+
+<pre><code>ASSERT_THAT(cheese, is(_not(equalTo(smelly))));
+</code></pre>
+
+<h4>
+<a name="startswith" class="anchor" href="#startswith"><span class="octicon octicon-link"></span></a>startsWith</h4>
+
+<p>Creates a matcher that matches if the examined QString starts with the specified
+QString.</p>
+
+<pre><code>ASSERT_THAT(QStringLiteral("myStringOfNote"), startsWith("my"));
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/cloose">cloose</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46374644-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
