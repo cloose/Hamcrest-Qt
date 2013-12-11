@@ -70,7 +70,7 @@ public:
     }
 
     /**
-     * Converts the description into a {@link QString} value.
+     * Converts the description into a @c QString value.
      */
     virtual QString toString() const = 0;
 

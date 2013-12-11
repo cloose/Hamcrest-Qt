@@ -15,10 +15,13 @@ class StringDescription : public BaseDescription
 public:
     StringDescription();
 
+    /**
+     * Returns the description as a string.
+     */
     virtual QString toString() const;
 
     /**
-     * Return the description of a {@link SelfDescribing} object as a String.
+     * Return the description of a {@link SelfDescribing} object as a @c QString.
      *
      * @param selfDescribing
      * The object to be described.

@@ -32,6 +32,12 @@ public:
     using ShortcutCombination<T>::matches;
 };
 
+/**
+ * Creates a matcher that matches if the examined object matches <b>ANY</b> of the specified matchers.
+ * <p/>
+ * For example:
+ * <pre>assertThat("myValue", anyOf(startsWith("foo"), containsString("Val")))</pre>
+ */
 template <typename T>
 QSharedPointer<Matcher<T> > anyOf(const QList<QSharedPointer<Matcher<T> > > &matchers)
 {

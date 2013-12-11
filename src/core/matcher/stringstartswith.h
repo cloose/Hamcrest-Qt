@@ -9,7 +9,7 @@
 namespace HamcrestQt {
 
 /**
- * Tests if the argument is a string that contains a substring.
+ * Tests if the argument is a string that starts with a substring.
  */
 class StringStartsWith : public SubstringMatcher
 {
@@ -22,8 +22,8 @@ protected:
 };
 
 /**
- * Creates a matcher that matches if the examined {@link QString} starts with the specified
- * {@link QString}.
+ * Creates a matcher that matches if the examined @c QString starts with the specified
+ * @c QString.
  * <p/>
  * For example:
  * <pre>assertThat("myStringOfNote", startsWith("my"))</pre>

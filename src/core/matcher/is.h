@@ -13,7 +13,7 @@ namespace HamcrestQt {
  * to be slightly more expressive.
  *
  * For example: assertThat(cheese, equalTo(smelly))
- * vs. assertThat(cheese, is(equalTo(smelly)))
+ *          vs. assertThat(cheese, is(equalTo(smelly)))
  */
 template <typename T>
 class Is : public BaseMatcher<T>
@@ -40,6 +40,16 @@ private:
     QSharedPointer<Matcher<T> > matcher;
 };
 
+/**
+ * Decorates another Matcher, retaining its behaviour, but allowing tests
+ * to be slightly more expressive.
+ * <p/>
+ * For example:
+ * <pre>assertThat(cheese, is(equalTo(smelly)))</pre>
+ * instead of:
+ * <pre>assertThat(cheese, equalTo(smelly))</pre>
+ *
+ */
 template <typename T>
 QSharedPointer<Matcher<T> > is(const QSharedPointer<Matcher<T> > &matcher)
 {

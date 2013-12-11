@@ -22,8 +22,8 @@ protected:
 };
 
 /**
- * Creates a matcher that matches if the examined {@link QString} contains the specified
- * {@link QString} anywhere.
+ * Creates a matcher that matches if the examined @c QString contains the specified
+ * @c QString anywhere.
  * <p/>
  * For example:
  * @code ASSERT_THAT("myStringOfNote", containsString("ring")); @endcode

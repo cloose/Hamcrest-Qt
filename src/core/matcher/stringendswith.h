@@ -9,7 +9,7 @@
 namespace HamcrestQt {
 
 /**
- * Tests if the argument is a string that contains a substring.
+ * Tests if the argument is a string that ends with a substring.
  */
 class StringEndsWith : public SubstringMatcher
 {
@@ -22,8 +22,8 @@ protected:
 };
 
 /**
- * Creates a matcher that matches if the examined {@link QString} ends with the specified
- * {@link QString}.
+ * Creates a matcher that matches if the examined @c QString ends with the specified
+ * @c QString.
  * <p/>
  * For example:
  * <pre>assertThat("myStringOfNote", endsWith("Note"))</pre>
