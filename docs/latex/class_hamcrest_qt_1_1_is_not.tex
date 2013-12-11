@@ -1,0 +1,89 @@
+\hypertarget{class_hamcrest_qt_1_1_is_not}{\section{Hamcrest\-Qt\-:\-:Is\-Not$<$ T $>$ Class Template Reference}
+\label{class_hamcrest_qt_1_1_is_not}\index{Hamcrest\-Qt\-::\-Is\-Not$<$ T $>$@{Hamcrest\-Qt\-::\-Is\-Not$<$ T $>$}}
+}
+
+
+Calculates the logical negation of a matcher.  
+
+
+
+
+{\ttfamily \#include $<$isnot.\-h$>$}
+
+Inheritance diagram for Hamcrest\-Qt\-:\-:Is\-Not$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_hamcrest_qt_1_1_is_not}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hamcrest_qt_1_1_is_not_ac31d53bbc1b631f7fa00c5c09568730f}{{\bfseries Is\-Not} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&m)}\label{class_hamcrest_qt_1_1_is_not_ac31d53bbc1b631f7fa00c5c09568730f}
+
+\item 
+virtual bool \hyperlink{class_hamcrest_qt_1_1_is_not_a37c8d69373e96e12dc8937d241cfde9f}{matches} (const T \&item) const 
+\begin{DoxyCompactList}\small\item\em Evaluates the matcher for argument {\itshape item}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_hamcrest_qt_1_1_is_not_a0fe1623440286dcacb586b531e94384f}{describe\-To} (\hyperlink{class_hamcrest_qt_1_1_description}{Description} \&description) const 
+\begin{DoxyCompactList}\small\item\em Generates a description of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Hamcrest\-Qt\-::\-Is\-Not$<$ T $>$}
+
+Calculates the logical negation of a matcher. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hamcrest_qt_1_1_is_not_a0fe1623440286dcacb586b531e94384f}{\index{Hamcrest\-Qt\-::\-Is\-Not@{Hamcrest\-Qt\-::\-Is\-Not}!describe\-To@{describe\-To}}
+\index{describe\-To@{describe\-To}!HamcrestQt::IsNot@{Hamcrest\-Qt\-::\-Is\-Not}}
+\subsubsection[{describe\-To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ virtual void {\bf Hamcrest\-Qt\-::\-Is\-Not}$<$ T $>$\-::describe\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Description} \&}]{description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_is_not_a0fe1623440286dcacb586b531e94384f}
+
+
+Generates a description of the object. 
+
+The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_hamcrest_qt_1_1_self_describing_af04da98570148e5e943e42399f718e4c}{Hamcrest\-Qt\-::\-Self\-Describing}.
+
+\hypertarget{class_hamcrest_qt_1_1_is_not_a37c8d69373e96e12dc8937d241cfde9f}{\index{Hamcrest\-Qt\-::\-Is\-Not@{Hamcrest\-Qt\-::\-Is\-Not}!matches@{matches}}
+\index{matches@{matches}!HamcrestQt::IsNot@{Hamcrest\-Qt\-::\-Is\-Not}}
+\subsubsection[{matches}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ virtual bool {\bf Hamcrest\-Qt\-::\-Is\-Not}$<$ T $>$\-::matches (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{item}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_is_not_a37c8d69373e96e12dc8937d241cfde9f}
+
+
+Evaluates the matcher for argument {\itshape item}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the object against which the matcher is evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_hamcrest_qt_1_1_base_matcher}{Base\-Matcher} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_hamcrest_qt_1_1_matcher_a9a8a775345afd0fde8942a0755303075}{Hamcrest\-Qt\-::\-Matcher$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Christian/\-Documents/\-Git\-Hub/\-Hamcrest-\/\-Qt/src/core/matcher/isnot.\-h\end{DoxyCompactItemize}

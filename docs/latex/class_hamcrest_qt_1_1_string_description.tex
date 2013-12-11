@@ -1,0 +1,86 @@
+\hypertarget{class_hamcrest_qt_1_1_string_description}{\section{Hamcrest\-Qt\-:\-:String\-Description Class Reference}
+\label{class_hamcrest_qt_1_1_string_description}\index{Hamcrest\-Qt\-::\-String\-Description@{Hamcrest\-Qt\-::\-String\-Description}}
+}
+
+
+A \hyperlink{class_hamcrest_qt_1_1_description}{Description} that is stored as a string.  
+
+
+
+
+{\ttfamily \#include $<$stringdescription.\-h$>$}
+
+Inheritance diagram for Hamcrest\-Qt\-:\-:String\-Description\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hamcrest_qt_1_1_string_description}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hamcrest_qt_1_1_string_description_a7e5471e0482e2c026af2d37e5c155e67}{virtual Q\-String \hyperlink{class_hamcrest_qt_1_1_string_description_a7e5471e0482e2c026af2d37e5c155e67}{to\-String} () const }\label{class_hamcrest_qt_1_1_string_description_a7e5471e0482e2c026af2d37e5c155e67}
+
+\begin{DoxyCompactList}\small\item\em Returns the description as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\-String \hyperlink{class_hamcrest_qt_1_1_string_description_aa7cffb8dd9c5502076dd58554395b906}{to\-String} (const \hyperlink{class_hamcrest_qt_1_1_self_describing}{Self\-Describing} \&self\-Describing)
+\begin{DoxyCompactList}\small\item\em Return the description of a \hyperlink{class_hamcrest_qt_1_1_self_describing}{Self\-Describing} object as a {\ttfamily Q\-String}. \end{DoxyCompactList}\item 
+\hypertarget{class_hamcrest_qt_1_1_string_description_a426e3c8524d7e72075aa3e8b974b5bc8}{static Q\-String \hyperlink{class_hamcrest_qt_1_1_string_description_a426e3c8524d7e72075aa3e8b974b5bc8}{as\-String} (const \hyperlink{class_hamcrest_qt_1_1_self_describing}{Self\-Describing} \&self\-Describing)}\label{class_hamcrest_qt_1_1_string_description_a426e3c8524d7e72075aa3e8b974b5bc8}
+
+\begin{DoxyCompactList}\small\item\em Alias for \hyperlink{}{to\-String(\-Self\-Describing)}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_hamcrest_qt_1_1_string_description_a2e27da55b34506521df58b3e2f22a48c}{append\-String} (const Q\-String \&str)
+\begin{DoxyCompactList}\small\item\em Append the String {\itshape str} to the description. \end{DoxyCompactList}\item 
+\hypertarget{class_hamcrest_qt_1_1_string_description_ad259aeffbdd7d6d51cd636ed98b3bd38}{virtual void {\bfseries append} (const Q\-Char \&c)}\label{class_hamcrest_qt_1_1_string_description_ad259aeffbdd7d6d51cd636ed98b3bd38}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_hamcrest_qt_1_1_description}{Description} that is stored as a string. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hamcrest_qt_1_1_string_description_a2e27da55b34506521df58b3e2f22a48c}{\index{Hamcrest\-Qt\-::\-String\-Description@{Hamcrest\-Qt\-::\-String\-Description}!append\-String@{append\-String}}
+\index{append\-String@{append\-String}!HamcrestQt::StringDescription@{Hamcrest\-Qt\-::\-String\-Description}}
+\subsubsection[{append\-String}]{\setlength{\rightskip}{0pt plus 5cm}void Hamcrest\-Qt\-::\-String\-Description\-::append\-String (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_string_description_a2e27da55b34506521df58b3e2f22a48c}
+
+
+Append the String {\itshape str} to the description. 
+
+The default implementation passes every character to \hyperlink{}{append(\-Q\-Char)}. Override in subclasses to provide an efficient implementation. 
+
+Reimplemented from \hyperlink{class_hamcrest_qt_1_1_base_description_a7bb209dee8a47c3b4346a8126d0f0b3c}{Hamcrest\-Qt\-::\-Base\-Description}.
+
+\hypertarget{class_hamcrest_qt_1_1_string_description_aa7cffb8dd9c5502076dd58554395b906}{\index{Hamcrest\-Qt\-::\-String\-Description@{Hamcrest\-Qt\-::\-String\-Description}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!HamcrestQt::StringDescription@{Hamcrest\-Qt\-::\-String\-Description}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Hamcrest\-Qt\-::\-String\-Description\-::to\-String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Self\-Describing} \&}]{self\-Describing}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_hamcrest_qt_1_1_string_description_aa7cffb8dd9c5502076dd58554395b906}
+
+
+Return the description of a \hyperlink{class_hamcrest_qt_1_1_self_describing}{Self\-Describing} object as a {\ttfamily Q\-String}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\-Describing} & The object to be described. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The description of the object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Christian/\-Documents/\-Git\-Hub/\-Hamcrest-\/\-Qt/src/core/stringdescription.\-h\item 
+C\-:/\-Users/\-Christian/\-Documents/\-Git\-Hub/\-Hamcrest-\/\-Qt/src/core/stringdescription.\-cpp\end{DoxyCompactItemize}

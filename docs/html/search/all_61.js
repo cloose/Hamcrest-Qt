@@ -1,6 +1,8 @@
 var searchData=
 [
   ['allof',['AllOf',['../class_hamcrest_qt_1_1_all_of.html',1,'HamcrestQt']]],
+  ['allof',['allOf',['../namespace_hamcrest_qt.html#a77b3b27a3c856ef459926f4f8ec60307',1,'HamcrestQt']]],
+  ['anyof',['anyOf',['../namespace_hamcrest_qt.html#a3bdc7acaf499318972b745c8a21b0fb6',1,'HamcrestQt']]],
   ['anyof',['AnyOf',['../class_hamcrest_qt_1_1_any_of.html',1,'HamcrestQt']]],
   ['appenddescriptionof',['appendDescriptionOf',['../class_hamcrest_qt_1_1_base_description.html#a7ee8f64ba57295fa47dbda5946c875a2',1,'HamcrestQt::BaseDescription::appendDescriptionOf()'],['../class_hamcrest_qt_1_1_description.html#a973e1c3f7ad1f782540a19404cb52c66',1,'HamcrestQt::Description::appendDescriptionOf()']]],
   ['appendlist',['appendList',['../class_hamcrest_qt_1_1_description.html#a7bb11eef4483ba18cdee9d04e8d6fdd7',1,'HamcrestQt::Description']]],

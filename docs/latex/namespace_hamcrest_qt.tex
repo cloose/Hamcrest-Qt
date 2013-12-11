@@ -1,0 +1,286 @@
+\hypertarget{namespace_hamcrest_qt}{\section{Hamcrest\-Qt Namespace Reference}
+\label{namespace_hamcrest_qt}\index{Hamcrest\-Qt@{Hamcrest\-Qt}}
+}
+
+
+Hamcrest-\/\-Qt is a library of matchers, which can be combined in to create flexible expressions of intent in tests.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_hamcrest_qt_1_1_base_description}{Base\-Description}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{class_hamcrest_qt_1_1_description}{Description} that is stored as a string. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_base_matcher}{Base\-Matcher}
+\begin{DoxyCompactList}\small\item\em Base\-Class for all \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher} implementations. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_description}{Description}
+\begin{DoxyCompactList}\small\item\em A description of a \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_diagnosing_matcher}{Diagnosing\-Matcher}
+\item 
+class \hyperlink{class_hamcrest_qt_1_1_all_of}{All\-Of}
+\begin{DoxyCompactList}\small\item\em Calculates the logical conjunction of multiple matchers. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_any_of}{Any\-Of}
+\begin{DoxyCompactList}\small\item\em Calculates the logical disjunction of multiple matchers. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_is}{Is}
+\begin{DoxyCompactList}\small\item\em Decorates another \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}, retaining the behaviour but allowing tests to be slightly more expressive. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_is_equal}{Is\-Equal}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_hamcrest_qt_1_1_is}{Is} the value equal to another value, as tested by the operator==() method? \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_is_not}{Is\-Not}
+\begin{DoxyCompactList}\small\item\em Calculates the logical negation of a matcher. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_shortcut_combination}{Shortcut\-Combination}
+\item 
+class \hyperlink{class_hamcrest_qt_1_1_string_contains}{String\-Contains}
+\begin{DoxyCompactList}\small\item\em Tests if the argument is a string that contains a substring. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_string_ends_with}{String\-Ends\-With}
+\begin{DoxyCompactList}\small\item\em Tests if the argument is a string that ends with a substring. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_string_starts_with}{String\-Starts\-With}
+\begin{DoxyCompactList}\small\item\em Tests if the argument is a string that starts with a substring. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_substring_matcher}{Substring\-Matcher}
+\item 
+class \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}
+\begin{DoxyCompactList}\small\item\em A matcher over acceptable values. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_matcher_assert}{Matcher\-Assert}
+\item 
+class \hyperlink{class_hamcrest_qt_1_1_self_describing}{Self\-Describing}
+\begin{DoxyCompactList}\small\item\em The ability of an object to describe itself. \end{DoxyCompactList}\item 
+class \hyperlink{class_hamcrest_qt_1_1_string_description}{String\-Description}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{class_hamcrest_qt_1_1_description}{Description} that is stored as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \hyperlink{namespace_hamcrest_qt_a77b3b27a3c856ef459926f4f8ec60307}{all\-Of} (const Q\-List$<$ Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ $>$ \&matchers)
+\begin{DoxyCompactList}\small\item\em Creates a matcher that matches if the examined object matches {\bfseries A\-L\-L} of the specified matchers. \end{DoxyCompactList}\item 
+\hypertarget{namespace_hamcrest_qt_a9beec73c27114304f22a4704842bf841}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries all\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second)}\label{namespace_hamcrest_qt_a9beec73c27114304f22a4704842bf841}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a63a6d0c4bb869944c6bc4a6ce33a91cd}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries all\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third)}\label{namespace_hamcrest_qt_a63a6d0c4bb869944c6bc4a6ce33a91cd}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_af167d28bc118963c7b42598ce81a8fd5}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries all\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fourth)}\label{namespace_hamcrest_qt_af167d28bc118963c7b42598ce81a8fd5}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_ade5face79ec28843e874d5838a6359a0}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries all\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fourth, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fifth)}\label{namespace_hamcrest_qt_ade5face79ec28843e874d5838a6359a0}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a212acd440c9c1c5cfc353746658ef4ae}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries all\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fourth, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fifth, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&sixth)}\label{namespace_hamcrest_qt_a212acd440c9c1c5cfc353746658ef4ae}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \hyperlink{namespace_hamcrest_qt_a3bdc7acaf499318972b745c8a21b0fb6}{any\-Of} (const Q\-List$<$ Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ $>$ \&matchers)
+\begin{DoxyCompactList}\small\item\em Creates a matcher that matches if the examined object matches {\bfseries A\-N\-Y} of the specified matchers. \end{DoxyCompactList}\item 
+\hypertarget{namespace_hamcrest_qt_a87fd234ca8afe8ef6881c7df105ee989}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries any\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second)}\label{namespace_hamcrest_qt_a87fd234ca8afe8ef6881c7df105ee989}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a1849e87c7501720cdda6f61640eb99c2}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries any\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third)}\label{namespace_hamcrest_qt_a1849e87c7501720cdda6f61640eb99c2}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a8e62bf0eb93327418df0aae733e36f73}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries any\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fourth)}\label{namespace_hamcrest_qt_a8e62bf0eb93327418df0aae733e36f73}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a55adc1b8685bb4cac50aa602d03c200d}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries any\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fourth, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fifth)}\label{namespace_hamcrest_qt_a55adc1b8685bb4cac50aa602d03c200d}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_ab08811fbd4164f6ca3b700b48f528e1e}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries any\-Of} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&first, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&second, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&third, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fourth, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&fifth, const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&sixth)}\label{namespace_hamcrest_qt_ab08811fbd4164f6ca3b700b48f528e1e}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a1a99fe898b2b85cb0a249123a44b3b6f}{{\footnotesize template$<$typename T $>$ }\\bool {\bfseries Are\-Equal} (const T \&actual, const T \&expected)}\label{namespace_hamcrest_qt_a1a99fe898b2b85cb0a249123a44b3b6f}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_ae0acf05b2fd0a342d222bd30f9d82799}{bool {\bfseries Are\-Equal} (const char $\ast$actual, const char $\ast$expected)}\label{namespace_hamcrest_qt_ae0acf05b2fd0a342d222bd30f9d82799}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \hyperlink{namespace_hamcrest_qt_af2c85daf497047f4891285dd0a86f7f1}{is} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&matcher)
+\begin{DoxyCompactList}\small\item\em Decorates another \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}, retaining its behaviour, but allowing tests to be slightly more expressive. \end{DoxyCompactList}\item 
+\hypertarget{namespace_hamcrest_qt_a45dcba83f740365cbd95c2ea06ac2a3f}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries is} (const T \&operand)}\label{namespace_hamcrest_qt_a45dcba83f740365cbd95c2ea06ac2a3f}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_aeee2510fdb711c6f7185b68e269ff2a9}{Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ const \\*
+char $\ast$ $>$ $>$ {\bfseries is} (const char $\ast$operand)}\label{namespace_hamcrest_qt_aeee2510fdb711c6f7185b68e269ff2a9}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a117dd95db4e9739b9131ba7e3fa943c3}{{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ {\bfseries equal\-To} (const T \&operand)}\label{namespace_hamcrest_qt_a117dd95db4e9739b9131ba7e3fa943c3}
+
+\item 
+\hypertarget{namespace_hamcrest_qt_a69fe6ca6e07236c8071b760c8e1508a3}{Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ const \\*
+char $\ast$ $>$ $>$ {\bfseries equal\-To} (const char operand\mbox{[}$\,$\mbox{]})}\label{namespace_hamcrest_qt_a69fe6ca6e07236c8071b760c8e1508a3}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \hyperlink{namespace_hamcrest_qt_a1adc24012e56d9cd44b402873a3ffc03}{\-\_\-not} (const Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \&matcher)
+\begin{DoxyCompactList}\small\item\em Creates a matcher that wraps an existing matcher, but inverts the logic by which it will match. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ \hyperlink{namespace_hamcrest_qt_abfd16a389cc4dbec5004ba9c9d059660}{\-\_\-not} (const T \&operand)
+\begin{DoxyCompactList}\small\item\em A shortcut to the frequently used {\ttfamily not(equal\-To(x))}. \end{DoxyCompactList}\item 
+\hypertarget{namespace_hamcrest_qt_ae671e6aecabf951d073f2e0e4c0fb2b8}{Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ const \\*
+char $\ast$ $>$ $>$ {\bfseries \-\_\-not} (const char $\ast$operand)}\label{namespace_hamcrest_qt_ae671e6aecabf951d073f2e0e4c0fb2b8}
+
+\item 
+Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}\\*
+$<$ Q\-String $>$ $>$ \hyperlink{namespace_hamcrest_qt_ab456663a918a874b9fbf4c42dde6a439}{contains\-String} (const Q\-String \&substring)
+\begin{DoxyCompactList}\small\item\em Creates a matcher that matches if the examined {\ttfamily Q\-String} contains the specified {\ttfamily Q\-String} anywhere. \end{DoxyCompactList}\item 
+\hypertarget{namespace_hamcrest_qt_a4c961b244474f08f32c3c6523241c158}{Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}\\*
+$<$ Q\-String $>$ $>$ {\bfseries contains\-String} (const char $\ast$substring)}\label{namespace_hamcrest_qt_a4c961b244474f08f32c3c6523241c158}
+
+\item 
+Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}\\*
+$<$ Q\-String $>$ $>$ \hyperlink{namespace_hamcrest_qt_ae6827e66bbc17e98ac7bfc8bc256a399}{ends\-With} (const Q\-String \&suffix)
+\begin{DoxyCompactList}\small\item\em Creates a matcher that matches if the examined {\ttfamily Q\-String} ends with the specified {\ttfamily Q\-String}. \end{DoxyCompactList}\item 
+\hypertarget{namespace_hamcrest_qt_a43903b6fc354f9d0ff065192278bb62e}{Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}\\*
+$<$ Q\-String $>$ $>$ {\bfseries ends\-With} (const char $\ast$suffix)}\label{namespace_hamcrest_qt_a43903b6fc354f9d0ff065192278bb62e}
+
+\item 
+Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}\\*
+$<$ Q\-String $>$ $>$ \hyperlink{namespace_hamcrest_qt_a64e4b2a75d225fcd62ada49698f8614a}{starts\-With} (const Q\-String \&prefix)
+\begin{DoxyCompactList}\small\item\em Creates a matcher that matches if the examined {\ttfamily Q\-String} starts with the specified {\ttfamily Q\-String}. \end{DoxyCompactList}\item 
+\hypertarget{namespace_hamcrest_qt_a8631f62f98d1de7d44558107f0daf1f6}{Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}\\*
+$<$ Q\-String $>$ $>$ {\bfseries starts\-With} (const char $\ast$prefix)}\label{namespace_hamcrest_qt_a8631f62f98d1de7d44558107f0daf1f6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hamcrest-\/\-Qt is a library of matchers, which can be combined in to create flexible expressions of intent in tests. 
+
+\subsection{Function Documentation}
+\hypertarget{namespace_hamcrest_qt_a1adc24012e56d9cd44b402873a3ffc03}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!\-\_\-not@{\-\_\-not}}
+\index{\-\_\-not@{\-\_\-not}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{\-\_\-not}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Q\-Shared\-Pointer$<${\bf Matcher}$<$T$>$ $>$ Hamcrest\-Qt\-::\-\_\-not (
+\begin{DoxyParamCaption}
+\item[{const Q\-Shared\-Pointer$<$ Matcher$<$ T $>$ $>$ \&}]{matcher}
+\end{DoxyParamCaption}
+)}}\label{namespace_hamcrest_qt_a1adc24012e56d9cd44b402873a3ffc03}
+
+
+Creates a matcher that wraps an existing matcher, but inverts the logic by which it will match. 
+
+For example\-: 
+\begin{DoxyPre}assertThat(cheese, is(not(equalTo(smelly))))\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em matcher} & the matcher whose sense should be inverted \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespace_hamcrest_qt_abfd16a389cc4dbec5004ba9c9d059660}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!\-\_\-not@{\-\_\-not}}
+\index{\-\_\-not@{\-\_\-not}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{\-\_\-not}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Q\-Shared\-Pointer$<${\bf Matcher}$<$T$>$ $>$ Hamcrest\-Qt\-::\-\_\-not (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{operand}
+\end{DoxyParamCaption}
+)}}\label{namespace_hamcrest_qt_abfd16a389cc4dbec5004ba9c9d059660}
+
+
+A shortcut to the frequently used {\ttfamily not(equal\-To(x))}. 
+
+For example\-: 
+\begin{DoxyPre}assertThat(cheese, is(not(smelly)))\end{DoxyPre}
+ instead of\-: 
+\begin{DoxyPre}assertThat(cheese, is(not(equalTo(smelly))))\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value that any examined object should {\bfseries not} equal \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespace_hamcrest_qt_a77b3b27a3c856ef459926f4f8ec60307}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!all\-Of@{all\-Of}}
+\index{all\-Of@{all\-Of}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{all\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Q\-Shared\-Pointer$<${\bf Matcher}$<$T$>$ $>$ Hamcrest\-Qt\-::all\-Of (
+\begin{DoxyParamCaption}
+\item[{const Q\-List$<$ Q\-Shared\-Pointer$<$ Matcher$<$ T $>$ $>$ $>$ \&}]{matchers}
+\end{DoxyParamCaption}
+)}}\label{namespace_hamcrest_qt_a77b3b27a3c856ef459926f4f8ec60307}
+
+
+Creates a matcher that matches if the examined object matches {\bfseries A\-L\-L} of the specified matchers. 
+
+For example\-: 
+\begin{DoxyPre}assertThat("myValue", allOf(startsWith("my"), containsString("Val")))\end{DoxyPre}
+ \hypertarget{namespace_hamcrest_qt_a3bdc7acaf499318972b745c8a21b0fb6}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!any\-Of@{any\-Of}}
+\index{any\-Of@{any\-Of}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{any\-Of}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Q\-Shared\-Pointer$<${\bf Matcher}$<$T$>$ $>$ Hamcrest\-Qt\-::any\-Of (
+\begin{DoxyParamCaption}
+\item[{const Q\-List$<$ Q\-Shared\-Pointer$<$ Matcher$<$ T $>$ $>$ $>$ \&}]{matchers}
+\end{DoxyParamCaption}
+)}}\label{namespace_hamcrest_qt_a3bdc7acaf499318972b745c8a21b0fb6}
+
+
+Creates a matcher that matches if the examined object matches {\bfseries A\-N\-Y} of the specified matchers. 
+
+For example\-: 
+\begin{DoxyPre}assertThat("myValue", anyOf(startsWith("foo"), containsString("Val")))\end{DoxyPre}
+ \hypertarget{namespace_hamcrest_qt_ab456663a918a874b9fbf4c42dde6a439}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!contains\-String@{contains\-String}}
+\index{contains\-String@{contains\-String}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{contains\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Shared\-Pointer$<${\bf Matcher}$<$Q\-String$>$ $>$ Hamcrest\-Qt\-::contains\-String (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{substring}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_hamcrest_qt_ab456663a918a874b9fbf4c42dde6a439}
+
+
+Creates a matcher that matches if the examined {\ttfamily Q\-String} contains the specified {\ttfamily Q\-String} anywhere. 
+
+For example\-: 
+\begin{DoxyCode}
+ASSERT\_THAT(\textcolor{stringliteral}{"myStringOfNote"}, \hyperlink{namespace_hamcrest_qt_ab456663a918a874b9fbf4c42dde6a439}{containsString}(\textcolor{stringliteral}{"ring"})); 
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em substring} & the substring that the returned matcher will expect to find within any examined string \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespace_hamcrest_qt_ae6827e66bbc17e98ac7bfc8bc256a399}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!ends\-With@{ends\-With}}
+\index{ends\-With@{ends\-With}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{ends\-With}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Shared\-Pointer$<${\bf Matcher}$<$Q\-String$>$ $>$ Hamcrest\-Qt\-::ends\-With (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{suffix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_hamcrest_qt_ae6827e66bbc17e98ac7bfc8bc256a399}
+
+
+Creates a matcher that matches if the examined {\ttfamily Q\-String} ends with the specified {\ttfamily Q\-String}. 
+
+For example\-: 
+\begin{DoxyPre}assertThat("myStringOfNote", endsWith("Note"))\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em suffix} & the substring that the returned matcher will expect at the end of any examined string \\
+\hline
+\end{DoxyParams}
+\hypertarget{namespace_hamcrest_qt_af2c85daf497047f4891285dd0a86f7f1}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!is@{is}}
+\index{is@{is}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{is}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Q\-Shared\-Pointer$<${\bf Matcher}$<$T$>$ $>$ Hamcrest\-Qt\-::is (
+\begin{DoxyParamCaption}
+\item[{const Q\-Shared\-Pointer$<$ Matcher$<$ T $>$ $>$ \&}]{matcher}
+\end{DoxyParamCaption}
+)}}\label{namespace_hamcrest_qt_af2c85daf497047f4891285dd0a86f7f1}
+
+
+Decorates another \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}, retaining its behaviour, but allowing tests to be slightly more expressive. 
+
+For example\-: 
+\begin{DoxyPre}assertThat(cheese, is(equalTo(smelly)))\end{DoxyPre}
+ instead of\-: 
+\begin{DoxyPre}assertThat(cheese, equalTo(smelly))\end{DoxyPre}
+ \hypertarget{namespace_hamcrest_qt_a64e4b2a75d225fcd62ada49698f8614a}{\index{Hamcrest\-Qt@{Hamcrest\-Qt}!starts\-With@{starts\-With}}
+\index{starts\-With@{starts\-With}!HamcrestQt@{Hamcrest\-Qt}}
+\subsubsection[{starts\-With}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Shared\-Pointer$<${\bf Matcher}$<$Q\-String$>$ $>$ Hamcrest\-Qt\-::starts\-With (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{prefix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespace_hamcrest_qt_a64e4b2a75d225fcd62ada49698f8614a}
+
+
+Creates a matcher that matches if the examined {\ttfamily Q\-String} starts with the specified {\ttfamily Q\-String}. 
+
+For example\-: 
+\begin{DoxyPre}assertThat("myStringOfNote", startsWith("my"))\end{DoxyPre}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & the substring that the returned matcher will expect at the start of any examined string \\
+\hline
+\end{DoxyParams}

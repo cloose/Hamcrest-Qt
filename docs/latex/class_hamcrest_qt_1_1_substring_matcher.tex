@@ -1,0 +1,117 @@
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher}{\section{Hamcrest\-Qt\-:\-:Substring\-Matcher Class Reference}
+\label{class_hamcrest_qt_1_1_substring_matcher}\index{Hamcrest\-Qt\-::\-Substring\-Matcher@{Hamcrest\-Qt\-::\-Substring\-Matcher}}
+}
+Inheritance diagram for Hamcrest\-Qt\-:\-:Substring\-Matcher\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.988604cm]{class_hamcrest_qt_1_1_substring_matcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_hamcrest_qt_1_1_substring_matcher_a52111254de729e8ffe6392aaeba1f08b}{matches} (const Q\-String \&item) const 
+\begin{DoxyCompactList}\small\item\em Evaluates the matcher for argument {\itshape item}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_hamcrest_qt_1_1_substring_matcher_af3f68e4871350cdecdf145575593e671}{describe\-To} (\hyperlink{class_hamcrest_qt_1_1_description}{Description} \&description) const 
+\begin{DoxyCompactList}\small\item\em Generates a description of the object. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_hamcrest_qt_1_1_substring_matcher_a23bb6d4b756dd8745a883eb88a993a2b}{describe\-Mismatch} (const Q\-String \&item, \hyperlink{class_hamcrest_qt_1_1_description}{Description} \&description) const 
+\begin{DoxyCompactList}\small\item\em Generate a description of why the matcher has not accepted the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher_a8a4045b70e21e0faf4942f3933aa1d35}{{\bfseries Substring\-Matcher} (const Q\-String \&str)}\label{class_hamcrest_qt_1_1_substring_matcher_a8a4045b70e21e0faf4942f3933aa1d35}
+
+\item 
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher_ac8b42a97691518d7f2332b7fb1c930d6}{virtual bool {\bfseries eval\-Substring\-Of} (const Q\-String \&str) const =0}\label{class_hamcrest_qt_1_1_substring_matcher_ac8b42a97691518d7f2332b7fb1c930d6}
+
+\item 
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher_a86c109697dbaaf2b012dc774f9fa9668}{virtual Q\-String {\bfseries relationship} () const =0}\label{class_hamcrest_qt_1_1_substring_matcher_a86c109697dbaaf2b012dc774f9fa9668}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher_acea1b88931a3a8ae858ae18ba9aa5911}{Q\-String {\bfseries substring}}\label{class_hamcrest_qt_1_1_substring_matcher_acea1b88931a3a8ae858ae18ba9aa5911}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher_a23bb6d4b756dd8745a883eb88a993a2b}{\index{Hamcrest\-Qt\-::\-Substring\-Matcher@{Hamcrest\-Qt\-::\-Substring\-Matcher}!describe\-Mismatch@{describe\-Mismatch}}
+\index{describe\-Mismatch@{describe\-Mismatch}!HamcrestQt::SubstringMatcher@{Hamcrest\-Qt\-::\-Substring\-Matcher}}
+\subsubsection[{describe\-Mismatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Hamcrest\-Qt\-::\-Substring\-Matcher\-::describe\-Mismatch (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{item, }
+\item[{{\bf Description} \&}]{mismatch\-Description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_substring_matcher_a23bb6d4b756dd8745a883eb88a993a2b}
+
+
+Generate a description of why the matcher has not accepted the item. 
+
+The description will be part of a larger description of why a matching failed, so it should be concise. This method assumes that {\ttfamily matches(item)} is false, but will not check this.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item that the \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher} has rejected. \\
+\hline
+{\em mismatch\-Description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_hamcrest_qt_1_1_base_matcher_a4299e8a4358ff624fb857a3301dd1b73}{Hamcrest\-Qt\-::\-Base\-Matcher$<$ Q\-String $>$}.
+
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher_af3f68e4871350cdecdf145575593e671}{\index{Hamcrest\-Qt\-::\-Substring\-Matcher@{Hamcrest\-Qt\-::\-Substring\-Matcher}!describe\-To@{describe\-To}}
+\index{describe\-To@{describe\-To}!HamcrestQt::SubstringMatcher@{Hamcrest\-Qt\-::\-Substring\-Matcher}}
+\subsubsection[{describe\-To}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Hamcrest\-Qt\-::\-Substring\-Matcher\-::describe\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Description} \&}]{description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_substring_matcher_af3f68e4871350cdecdf145575593e671}
+
+
+Generates a description of the object. 
+
+The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_hamcrest_qt_1_1_self_describing_af04da98570148e5e943e42399f718e4c}{Hamcrest\-Qt\-::\-Self\-Describing}.
+
+\hypertarget{class_hamcrest_qt_1_1_substring_matcher_a52111254de729e8ffe6392aaeba1f08b}{\index{Hamcrest\-Qt\-::\-Substring\-Matcher@{Hamcrest\-Qt\-::\-Substring\-Matcher}!matches@{matches}}
+\index{matches@{matches}!HamcrestQt::SubstringMatcher@{Hamcrest\-Qt\-::\-Substring\-Matcher}}
+\subsubsection[{matches}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Hamcrest\-Qt\-::\-Substring\-Matcher\-::matches (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{item}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_substring_matcher_a52111254de729e8ffe6392aaeba1f08b}
+
+
+Evaluates the matcher for argument {\itshape item}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the object against which the matcher is evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_hamcrest_qt_1_1_base_matcher}{Base\-Matcher} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_hamcrest_qt_1_1_matcher_a9a8a775345afd0fde8942a0755303075}{Hamcrest\-Qt\-::\-Matcher$<$ Q\-String $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Christian/\-Documents/\-Git\-Hub/\-Hamcrest-\/\-Qt/src/core/matcher/substringmatcher.\-h\end{DoxyCompactItemize}

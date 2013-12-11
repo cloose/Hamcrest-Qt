@@ -1,0 +1,92 @@
+\hypertarget{class_hamcrest_qt_1_1_any_of}{\section{Hamcrest\-Qt\-:\-:Any\-Of$<$ T $>$ Class Template Reference}
+\label{class_hamcrest_qt_1_1_any_of}\index{Hamcrest\-Qt\-::\-Any\-Of$<$ T $>$@{Hamcrest\-Qt\-::\-Any\-Of$<$ T $>$}}
+}
+
+
+Calculates the logical disjunction of multiple matchers.  
+
+
+
+
+{\ttfamily \#include $<$anyof.\-h$>$}
+
+Inheritance diagram for Hamcrest\-Qt\-:\-:Any\-Of$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_hamcrest_qt_1_1_any_of}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hamcrest_qt_1_1_any_of_a7dc9177bd13e2b0aa5ce221e3d2587f5}{{\bfseries Any\-Of} (const Q\-List$<$ Q\-Shared\-Pointer$<$ \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher}$<$ T $>$ $>$ $>$ \&m)}\label{class_hamcrest_qt_1_1_any_of_a7dc9177bd13e2b0aa5ce221e3d2587f5}
+
+\item 
+virtual bool \hyperlink{class_hamcrest_qt_1_1_any_of_aa097e760ed6ce642c1ee40c73d73bdce}{matches} (const T \&item) const 
+\begin{DoxyCompactList}\small\item\em Evaluates the matcher for argument {\itshape item}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_hamcrest_qt_1_1_any_of_a32a386c0a8f6bab40344199964c3d62f}{describe\-To} (\hyperlink{class_hamcrest_qt_1_1_description}{Description} \&description) const 
+\begin{DoxyCompactList}\small\item\em Generates a description of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Hamcrest\-Qt\-::\-Any\-Of$<$ T $>$}
+
+Calculates the logical disjunction of multiple matchers. 
+
+Evaluation is shortcut, so subsequent matchers are not called if an earlier matcher returns {\ttfamily true}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hamcrest_qt_1_1_any_of_a32a386c0a8f6bab40344199964c3d62f}{\index{Hamcrest\-Qt\-::\-Any\-Of@{Hamcrest\-Qt\-::\-Any\-Of}!describe\-To@{describe\-To}}
+\index{describe\-To@{describe\-To}!HamcrestQt::AnyOf@{Hamcrest\-Qt\-::\-Any\-Of}}
+\subsubsection[{describe\-To}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ virtual void {\bf Hamcrest\-Qt\-::\-Any\-Of}$<$ T $>$\-::describe\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Description} \&}]{description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_any_of_a32a386c0a8f6bab40344199964c3d62f}
+
+
+Generates a description of the object. 
+
+The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_hamcrest_qt_1_1_self_describing_af04da98570148e5e943e42399f718e4c}{Hamcrest\-Qt\-::\-Self\-Describing}.
+
+\hypertarget{class_hamcrest_qt_1_1_any_of_aa097e760ed6ce642c1ee40c73d73bdce}{\index{Hamcrest\-Qt\-::\-Any\-Of@{Hamcrest\-Qt\-::\-Any\-Of}!matches@{matches}}
+\index{matches@{matches}!HamcrestQt::AnyOf@{Hamcrest\-Qt\-::\-Any\-Of}}
+\subsubsection[{matches}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ virtual bool {\bf Hamcrest\-Qt\-::\-Any\-Of}$<$ T $>$\-::matches (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{item}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_any_of_aa097e760ed6ce642c1ee40c73d73bdce}
+
+
+Evaluates the matcher for argument {\itshape item}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the object against which the matcher is evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_hamcrest_qt_1_1_base_matcher}{Base\-Matcher} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_hamcrest_qt_1_1_matcher_a9a8a775345afd0fde8942a0755303075}{Hamcrest\-Qt\-::\-Matcher$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Christian/\-Documents/\-Git\-Hub/\-Hamcrest-\/\-Qt/src/core/matcher/anyof.\-h\end{DoxyCompactItemize}

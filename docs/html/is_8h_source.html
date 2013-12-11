@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>Hamcrest-Qt: src/core/matcher/is.h Source File</title>
+<title>Hamcrest-Qt: C:/Users/Christian/Documents/GitHub/Hamcrest-Qt/src/core/matcher/is.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li><li class="navelem"><a class="el" href="dir_9f7bdc6aea7dc671b67a99bd6a7b6200.html">matcher</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_443233ba84f1860fc768b1882c52d713.html">Documents</a></li><li class="navelem"><a class="el" href="dir_1a15cc62b9431c1a3c0c5360e13c7c02.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_0705aa2657a3f09f472a008f2f95dbde.html">Hamcrest-Qt</a></li><li class="navelem"><a class="el" href="dir_b5d4d51bd6ab114f0384c53f3452cbd9.html">src</a></li><li class="navelem"><a class="el" href="dir_33c1fb823014f7892a72d5a2fec49968.html">core</a></li><li class="navelem"><a class="el" href="dir_d74789e69f895d183f73ee7e7f982e77.html">matcher</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -124,32 +124,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QSharedPointer&lt;Matcher&lt;T&gt; &gt; matcher;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;QSharedPointer&lt;Matcher&lt;T&gt; &gt; is(<span class="keyword">const</span> QSharedPointer&lt;Matcher&lt;T&gt; &gt; &amp;matcher)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> QSharedPointer&lt;Matcher&lt;T&gt; &gt;(<span class="keyword">new</span> Is&lt;T&gt;(matcher));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;QSharedPointer&lt;Matcher&lt;T&gt; &gt; is(<span class="keyword">const</span> T &amp;operand)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> is(equalTo(operand));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// template specialization for c-style string</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">inline</span> QSharedPointer&lt;Matcher&lt;const char*&gt; &gt; is(<span class="keyword">const</span> <span class="keywordtype">char</span> *operand)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> QSharedPointer&lt;Matcher&lt;const char*&gt; &gt;(<span class="keyword">new</span> Is&lt;const char*&gt;(equalTo(operand)));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace HamcrestQt</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // HAMCRESTQT_IS_H</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespace_hamcrest_qt.html#af2c85daf497047f4891285dd0a86f7f1">   54</a></span>&#160;QSharedPointer&lt;Matcher&lt;T&gt; &gt; <a class="code" href="namespace_hamcrest_qt.html#af2c85daf497047f4891285dd0a86f7f1">is</a>(<span class="keyword">const</span> QSharedPointer&lt;<a class="code" href="class_hamcrest_qt_1_1_matcher.html">Matcher&lt;T&gt;</a> &gt; &amp;matcher)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> QSharedPointer&lt;Matcher&lt;T&gt; &gt;(<span class="keyword">new</span> <a class="code" href="class_hamcrest_qt_1_1_is.html">Is&lt;T&gt;</a>(matcher));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;QSharedPointer&lt;Matcher&lt;T&gt; &gt; <a class="code" href="namespace_hamcrest_qt.html#af2c85daf497047f4891285dd0a86f7f1">is</a>(<span class="keyword">const</span> T &amp;operand)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespace_hamcrest_qt.html#af2c85daf497047f4891285dd0a86f7f1">is</a>(equalTo(operand));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// template specialization for c-style string</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">inline</span> QSharedPointer&lt;Matcher&lt;const char*&gt; &gt; <a class="code" href="namespace_hamcrest_qt.html#af2c85daf497047f4891285dd0a86f7f1">is</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *operand)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> QSharedPointer&lt;Matcher&lt;const char*&gt; &gt;(<span class="keyword">new</span> Is&lt;const char*&gt;(equalTo(operand)));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace HamcrestQt</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif // HAMCRESTQT_IS_H</span></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_is_html_adcddba2f01e78feaff9f75ab3c5c7dd2"><div class="ttname"><a href="class_hamcrest_qt_1_1_is.html#adcddba2f01e78feaff9f75ab3c5c7dd2">HamcrestQt::Is::describeTo</a></div><div class="ttdeci">virtual void describeTo(Description &amp;description) const </div><div class="ttdoc">Generates a description of the object. </div><div class="ttdef"><b>Definition:</b> is.h:29</div></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_description_html"><div class="ttname"><a href="class_hamcrest_qt_1_1_description.html">HamcrestQt::Description</a></div><div class="ttdoc">A description of a Matcher. </div><div class="ttdef"><b>Definition:</b> description.h:17</div></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_matcher_html"><div class="ttname"><a href="class_hamcrest_qt_1_1_matcher.html">HamcrestQt::Matcher</a></div><div class="ttdoc">A matcher over acceptable values. </div><div class="ttdef"><b>Definition:</b> matcher.h:21</div></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_is_html_ab8ab441f01e21785134ec0bbfb53f0b4"><div class="ttname"><a href="class_hamcrest_qt_1_1_is.html#ab8ab441f01e21785134ec0bbfb53f0b4">HamcrestQt::Is::matches</a></div><div class="ttdeci">virtual bool matches(const T &amp;item) const </div><div class="ttdoc">Evaluates the matcher for argument item. </div><div class="ttdef"><b>Definition:</b> is.h:24</div></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_is_html"><div class="ttname"><a href="class_hamcrest_qt_1_1_is.html">HamcrestQt::Is</a></div><div class="ttdoc">Decorates another Matcher, retaining the behaviour but allowing tests to be slightly more expressive...</div><div class="ttdef"><b>Definition:</b> is.h:19</div></div>
+<div class="ttc" id="namespace_hamcrest_qt_html_af2c85daf497047f4891285dd0a86f7f1"><div class="ttname"><a href="namespace_hamcrest_qt.html#af2c85daf497047f4891285dd0a86f7f1">HamcrestQt::is</a></div><div class="ttdeci">QSharedPointer&lt; Matcher&lt; T &gt; &gt; is(const QSharedPointer&lt; Matcher&lt; T &gt; &gt; &amp;matcher)</div><div class="ttdoc">Decorates another Matcher, retaining its behaviour, but allowing tests to be slightly more expressive...</div><div class="ttdef"><b>Definition:</b> is.h:54</div></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_base_matcher_html"><div class="ttname"><a href="class_hamcrest_qt_1_1_base_matcher.html">HamcrestQt::BaseMatcher</a></div><div class="ttdoc">BaseClass for all Matcher implementations. </div><div class="ttdef"><b>Definition:</b> basematcher.h:17</div></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_is_html_a3a8c6b52b2b0636e24b60542359ba12e"><div class="ttname"><a href="class_hamcrest_qt_1_1_is.html#a3a8c6b52b2b0636e24b60542359ba12e">HamcrestQt::Is::describeMismatch</a></div><div class="ttdeci">virtual void describeMismatch(const T &amp;item, Description &amp;description) const </div><div class="ttdoc">Generate a description of why the matcher has not accepted the item. </div><div class="ttdef"><b>Definition:</b> is.h:34</div></div>
 <div class="ttc" id="class_hamcrest_qt_1_1_description_html_ab6160a4dab7192858975de1827db2a63"><div class="ttname"><a href="class_hamcrest_qt_1_1_description.html#ab6160a4dab7192858975de1827db2a63">HamcrestQt::Description::appendText</a></div><div class="ttdeci">virtual Description &amp; appendText(const QString &amp;text)=0</div><div class="ttdoc">Appends some plain text to the description. </div></div>
@@ -157,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 11 2013 14:36:24 for Hamcrest-Qt by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 11 2013 19:12:52 for Hamcrest-Qt by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

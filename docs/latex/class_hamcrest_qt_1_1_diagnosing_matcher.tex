@@ -1,0 +1,81 @@
+\hypertarget{class_hamcrest_qt_1_1_diagnosing_matcher}{\section{Hamcrest\-Qt\-:\-:Diagnosing\-Matcher$<$ T $>$ Class Template Reference}
+\label{class_hamcrest_qt_1_1_diagnosing_matcher}\index{Hamcrest\-Qt\-::\-Diagnosing\-Matcher$<$ T $>$@{Hamcrest\-Qt\-::\-Diagnosing\-Matcher$<$ T $>$}}
+}
+Inheritance diagram for Hamcrest\-Qt\-:\-:Diagnosing\-Matcher$<$ T $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_hamcrest_qt_1_1_diagnosing_matcher}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_hamcrest_qt_1_1_diagnosing_matcher_a95ea76988bacda59586ec1423c4d0e6c}{matches} (const T \&item) const 
+\begin{DoxyCompactList}\small\item\em Evaluates the matcher for argument {\itshape item}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_hamcrest_qt_1_1_diagnosing_matcher_a122cccc22b8be886b3202e0a126995ed}{describe\-Mismatch} (const T \&item, \hyperlink{class_hamcrest_qt_1_1_description}{Description} \&mismatch\-Description) const 
+\begin{DoxyCompactList}\small\item\em Generate a description of why the matcher has not accepted the item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_hamcrest_qt_1_1_diagnosing_matcher_a7e4d9a805fe53502e44b8633f8618425}{virtual bool {\bfseries matches} (const T \&item, \hyperlink{class_hamcrest_qt_1_1_description}{Description} \&mismatch\-Description) const =0}\label{class_hamcrest_qt_1_1_diagnosing_matcher_a7e4d9a805fe53502e44b8633f8618425}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_hamcrest_qt_1_1_diagnosing_matcher_a122cccc22b8be886b3202e0a126995ed}{\index{Hamcrest\-Qt\-::\-Diagnosing\-Matcher@{Hamcrest\-Qt\-::\-Diagnosing\-Matcher}!describe\-Mismatch@{describe\-Mismatch}}
+\index{describe\-Mismatch@{describe\-Mismatch}!HamcrestQt::DiagnosingMatcher@{Hamcrest\-Qt\-::\-Diagnosing\-Matcher}}
+\subsubsection[{describe\-Mismatch}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ virtual void {\bf Hamcrest\-Qt\-::\-Diagnosing\-Matcher}$<$ T $>$\-::describe\-Mismatch (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{item, }
+\item[{{\bf Description} \&}]{mismatch\-Description}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_diagnosing_matcher_a122cccc22b8be886b3202e0a126995ed}
+
+
+Generate a description of why the matcher has not accepted the item. 
+
+The description will be part of a larger description of why a matching failed, so it should be concise. This method assumes that {\ttfamily matches(item)} is false, but will not check this.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item that the \hyperlink{class_hamcrest_qt_1_1_matcher}{Matcher} has rejected. \\
+\hline
+{\em mismatch\-Description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_hamcrest_qt_1_1_base_matcher_a4299e8a4358ff624fb857a3301dd1b73}{Hamcrest\-Qt\-::\-Base\-Matcher$<$ T $>$}.
+
+\hypertarget{class_hamcrest_qt_1_1_diagnosing_matcher_a95ea76988bacda59586ec1423c4d0e6c}{\index{Hamcrest\-Qt\-::\-Diagnosing\-Matcher@{Hamcrest\-Qt\-::\-Diagnosing\-Matcher}!matches@{matches}}
+\index{matches@{matches}!HamcrestQt::DiagnosingMatcher@{Hamcrest\-Qt\-::\-Diagnosing\-Matcher}}
+\subsubsection[{matches}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ virtual bool {\bf Hamcrest\-Qt\-::\-Diagnosing\-Matcher}$<$ T $>$\-::matches (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{item}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_hamcrest_qt_1_1_diagnosing_matcher_a95ea76988bacda59586ec1423c4d0e6c}
+
+
+Evaluates the matcher for argument {\itshape item}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & the object against which the matcher is evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\itshape item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{class_hamcrest_qt_1_1_base_matcher}{Base\-Matcher} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{class_hamcrest_qt_1_1_matcher_a9a8a775345afd0fde8942a0755303075}{Hamcrest\-Qt\-::\-Matcher$<$ T $>$}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Christian/\-Documents/\-Git\-Hub/\-Hamcrest-\/\-Qt/src/core/diagnosingmatcher.\-h\end{DoxyCompactItemize}
