@@ -3,6 +3,10 @@
 
 #include "selfdescribing.h"
 
+/**
+ * Hamcrest-Qt is a library of matchers, which can be combined in to
+ * create flexible expressions of intent in tests.
+ */
 namespace HamcrestQt {
 
 class Description;

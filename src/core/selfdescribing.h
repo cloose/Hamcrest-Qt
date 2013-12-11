@@ -5,6 +5,9 @@ namespace HamcrestQt {
 
 class Description;
 
+/**
+ * The ability of an object to describe itself.
+ */
 class SelfDescribing
 {
 public:

@@ -8,6 +8,9 @@
 
 namespace HamcrestQt {
 
+/**
+ * Tests if the argument is a string that contains a substring.
+ */
 class StringEndsWith : public SubstringMatcher
 {
 public:

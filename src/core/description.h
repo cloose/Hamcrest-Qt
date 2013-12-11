@@ -47,7 +47,7 @@ public:
     Description &appendValue(const QChar &value);
 
     /**
-     * Appends a list of {@link org.hamcrest.SelfDescribing} objects
+     * Appends a list of {@link SelfDescribing} objects
      * to the description.
      */
     template <typename Iterator>

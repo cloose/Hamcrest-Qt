@@ -8,6 +8,9 @@
 
 namespace HamcrestQt {
 
+/**
+ * Tests if the argument is a string that contains a substring.
+ */
 class StringContains : public SubstringMatcher
 {
 public:
@@ -23,7 +26,7 @@ protected:
  * {@link QString} anywhere.
  * <p/>
  * For example:
- * <pre>assertThat("myStringOfNote", containsString("ring"))</pre>
+ * @code ASSERT_THAT("myStringOfNote", containsString("ring")); @endcode
  *
  * @param substring
  * the substring that the returned matcher will expect to find within any examined string
