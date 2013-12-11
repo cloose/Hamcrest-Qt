@@ -1,5 +1,5 @@
-#ifndef HAMCRESTQT_STRINGENDSWITH
-#define HAMCRESTQT_STRINGENDSWITH
+#ifndef HAMCRESTQT_STRINGENDSWITH_H
+#define HAMCRESTQT_STRINGENDSWITH_H
 
 #include <QSharedPointer>
 
@@ -34,11 +34,11 @@ QSharedPointer<Matcher<QString> > endsWith(const QString &suffix)
 }
 
 // template specialization for c-style string
-inline QSharedPointer<Matcher<QString> > endsWith(const char *prefix)
+inline QSharedPointer<Matcher<QString> > endsWith(const char *suffix)
 {
-    return QSharedPointer<Matcher<QString> >(new StringEndsWith(QString(prefix)));
+    return QSharedPointer<Matcher<QString> >(new StringEndsWith(QString(suffix)));
 }
 
 } // namespace HamcrestQt
 
-#endif // HAMCRESTQT_STRINGENDSWITH
+#endif // HAMCRESTQT_STRINGENDSWITH_H
