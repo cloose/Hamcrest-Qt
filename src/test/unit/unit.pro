@@ -15,6 +15,7 @@ TEMPLATE = app
 SOURCES += \
     main.cpp \
     alloftest.cpp \
+    anyoftest.cpp \
     basedescriptiontest.cpp \
     basematchertest.cpp \
     isequaltest.cpp \
@@ -25,6 +26,7 @@ SOURCES += \
 
 HEADERS += \
     alloftest.h \
+    anyoftest.h \
     basedescriptiontest.h \
     basematchertest.h \
     isequaltest.h \

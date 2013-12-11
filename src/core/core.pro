@@ -31,10 +31,12 @@ HEADERS += \
     stringdescription.h \
     tostring_p.h \
     matcher/allof.h \
+    matcher/anyof.h \
     matcher/areequal_p.h \
     matcher/is.h \
     matcher/isequal.h \
     matcher/isnot.h \
+    matcher/shortcutcombination.h \
     matcher/stringcontains.h \
     matcher/stringendswith.h \
     matcher/stringstartswith.h \
