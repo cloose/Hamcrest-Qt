@@ -16,6 +16,7 @@ SOURCES += \
     description.cpp \
     matcherassert.cpp \
     stringdescription.cpp \
+    matcher/stringcontains.cpp \
     matcher/stringendswith.cpp \
     matcher/stringstartswith.cpp
 
@@ -34,6 +35,7 @@ HEADERS += \
     matcher/is.h \
     matcher/isequal.h \
     matcher/isnot.h \
+    matcher/stringcontains.h \
     matcher/stringendswith.h \
     matcher/stringstartswith.h \
     matcher/substringmatcher.h

@@ -4,6 +4,7 @@
 
 #include <matcher/allof.h>
 #include <matcher/isequal.h>
+#include <matcher/stringcontains.h>
 #include <matcher/stringendswith.h>
 #include <matcher/stringstartswith.h>
 using namespace HamcrestQt;
@@ -23,7 +24,7 @@ void AllOfTest::evaluatesToTheTheLogicalConjunctionOfTwoOtherMatchers()
 
 void AllOfTest::evaluatesToTheTheLogicalConjunctionOfManyOtherMatchers()
 {
-    QSharedPointer<Matcher<QString> > matcher = allOf(startsWith("g"), startsWith("go"), endsWith("d"), startsWith("go"), startsWith("goo"));
+    QSharedPointer<Matcher<QString> > matcher = allOf(startsWith("g"), startsWith("go"), endsWith("d"), containsString("oo"), startsWith("goo"));
 
     ASSERT_MATCHES_MSG("didn't pass all sub-matchers", matcher, QStringLiteral("good"));
     ASSERT_DOES_NOT_MATCH_MSG("didn't fail middle sub-matcher", matcher, QStringLiteral("goon"));
