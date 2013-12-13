@@ -34,6 +34,7 @@ HEADERS += \
     matcher/anyof.h \
     matcher/areequal_p.h \
     matcher/is.h \
+    matcher/isanything.h \
     matcher/isequal.h \
     matcher/isnot.h \
     matcher/shortcutcombination.h \

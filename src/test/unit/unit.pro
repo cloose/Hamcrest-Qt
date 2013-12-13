@@ -18,6 +18,7 @@ SOURCES += \
     anyoftest.cpp \
     basedescriptiontest.cpp \
     basematchertest.cpp \
+    isanythingtest.cpp \
     isequaltest.cpp \
     isnottest.cpp \
     istest.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     anyoftest.h \
     basedescriptiontest.h \
     basematchertest.h \
+    isanythingtest.h \
     isequaltest.h \
     isnottest.h \
     istest.h \
