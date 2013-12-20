@@ -1,0 +1,13 @@
+@PACKAGE_INIT@
+
+#find_dependency(Qt5Core @REQUIRED_QT_VERSION@)
+
+set(HamcrestQtCore_VERSION_MAJOR "@HAMCRESTQT_VERSION_MAJOR@")
+set(HamcrestQtCore_VERSION_MINOR "@HAMCRESTQT_VERSION_MINOR@")
+set(HamcrestQtCore_VERSION_PATCH "@HAMCRESTQT_VERSION_PATCH@")
+
+set_and_check(HamcrestQtCore_INCLUDE_DIR "@PACKAGE_INCLUDE_INSTALL_DIR@")
+
+set(HamcrestQtCore_LIBRARY HamcrestQt::HamcrestQtCore)
+
+include("${CMAKE_CURRENT_LIST_DIR}/HamcrestQtCoreTargets.cmake")
