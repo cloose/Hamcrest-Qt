@@ -12,7 +12,7 @@ This code is pre-alpha quality. DO NOT USE IN PRODUCTION CODE.
 
 ## Links
 
-[Homepage](http://cloose.github.io/Hamcrest-Qt)
+[Homepage](http://cloose.github.io/Hamcrest-Qt)  
 [API Documentation](http://cloose.github.io/Hamcrest-Qt/docs/html/index.html)
 
 ## Supported Matchers
